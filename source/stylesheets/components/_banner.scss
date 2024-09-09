@@ -1,6 +1,6 @@
 .banner {
   width: 100vw;
-  height: 80vh;
+  height: 56vh;
   background-image:
     image-url('projects/bannerimage.jpeg');
   background-size: cover;
@@ -32,15 +32,15 @@
   margin-top: 10px;
 }
 
+
 .profile-container {
   flex: 0 0 auto;
 }
 
 .profile-photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
 }
 
 .text-container {

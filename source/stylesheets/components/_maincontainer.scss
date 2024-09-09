@@ -1,0 +1,8 @@
+.main-container {
+  background-color: black; // Black background
+  color: white;            // White text color for contrast
+  padding: 20px;           // Padding inside the container
+  margin: 0 auto;          // Center the container horizontally
+  max-width: 1200px;       // Maximum width of the container
+  box-sizing: border-box;  // Include padding in the width calculation
+}

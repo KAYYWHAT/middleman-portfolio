@@ -5,6 +5,27 @@
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Quicksand", "Helvetica", "sans-serif";
 
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-regular p {
+  font-size: 20px; /* Adjust size as needed */
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

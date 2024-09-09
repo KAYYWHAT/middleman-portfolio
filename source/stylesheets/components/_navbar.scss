@@ -1,12 +1,33 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  padding: 20px;
+  background: black;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-links {
+  display: flex;
+  gap: 100px; /* Adjust this value for desired spacing between links */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none; /* Optional: remove underline from links */
+  transition: color 0.3s ease; /* Optional: smooth transition effect */
+}
+
+.nav-link:hover {
+  color: greenyellow;
+}
+
+.navbar-toggler {
+  background: transparent;
+  border: none; /* Optional: remove border around button */
 }

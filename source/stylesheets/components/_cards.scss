@@ -1,34 +1,54 @@
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line if there’s not enough space */
+  gap: 16px; /* Space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+}
+
+/* Individual card styling */
 .card-product {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 300px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  max-width: 700px; /* Adjust max width as needed */
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
+  background-color: #333; /* Background color of card */
 }
 
+/* Styling for images */
 .project-image {
   display: block;
 }
 
 .image {
   width: 100%;
-  height: auto; /* Ensure the image maintains its aspect ratio */
-  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  height: auto;
+  object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
 }
 
+/* Information inside the card */
 .card-trip-infos {
   padding: 16px;
+  color: #fff; /* Set text color to white */
 }
 
 .card-trip-infos h2 {
   margin: 0 0 8px;
   font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .card-trip-infos p {
   margin: 0;
   font-size: 1em;
-  color: #555;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Optional: Add some global reset styles to avoid default browser styles interfering */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

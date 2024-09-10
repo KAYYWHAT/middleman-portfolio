@@ -1,11 +1,24 @@
-<div class="navbar-lewagon">
-  <div class="navbar-center roboto-regular">
-    <div class="navbar-links">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">Product Design</a>
-      <a class="nav-link" href="#">Web Development</a>
-      <a class="nav-link" href="#">Photography/Videography</a>
-      <a class="nav-link" href="#">Alertphorm</a>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <a class="profile-photo" href="#">
+      <%= image_tag 'projects/profileimage.jpeg', alt: 'profile photo', class: 'profile-photo' %>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CV</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

@@ -1,19 +1,28 @@
 <div class="banner">
   <div class="banner-content">
-    <div class="profile-image">
-      <%= image_tag 'projects/profileimage.jpeg', alt: 'profile photo', class: 'profile-photo' %>
-    </div>
     <div class="text-container">
-      <h1 class="roboto-bold" style="font-size: 56px;"><strong>Cadeyrn Rattur</strong></h1>
-      <h2 class="subtitle roboto-bold" style="font-size: 24px;">Tokyo-based Web Developer & Creative</h2>
-      <div id="about" class="roboto-regular">
-        <p>
-          Analytical and detail-oriented, with a passion for frontend development and
-          UI/UX design. Holding a BA in Innovation and Design with a Co-Major in
-          Japanese (JLPT N3), and a recent graduate of Le Wagon coding bootcamp.
-          Eager to apply my skills in creating intuitive, visually compelling user
-          experiences, and committed to continuous learning and contribution.
-        </p>
+      <h1 class="roboto-bold" style="font-size: 56px;"><strong>Tokyo-Based</strong></h1>
+      <h1 class="roboto-bold" style="font-size: 56px;"><strong>Web Developer & Creative</strong></h1>
+      <h2 class="subtitle roboto-regular" style="font-size: 24px;">Analytical and Detail-Oriented, with a passion for frontend development and UI / UX design.</h2>
+    </div>
+  </div>
+    <div class="row my-5" style="color: #031602; padding: 75px;">
+      <div class="col-12">
+        <div id="contact">
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="button-social d-flex flex-column justify-content-center align-items-center">
+              <i class="fa-solid fa-envelope"></i>
+              <%= mail_to "allfordcadeyrn@gmail.com", "", class: 'button-social-link' %>
+            </div>
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-brands fa-github"></i>
+            <%= link_to "", "https://github.com/KAYYWHAT", target: '_blank', class: 'button-social-link' %>
+          </div>
+          <div class="button-social d-flex flex-column justify-content-center align-items-center">
+            <i class="fa-brands fa-linkedin"></i>
+            <%= link_to "", "https://www.linkedin.com/in/cadeyrnrattur/", target: '_blank', class: 'button-social-link' %>
+          </div>
+        </div>
       </div>
     </div>
   </div>

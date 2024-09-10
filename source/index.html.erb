@@ -1,14 +1,38 @@
 <div>
-<%= partial 'partials/navbar' %>
+  <%= partial 'partials/navbar' %>
 </div>
 <div>
-<%= partial 'partials/banner' %>
+  <%= partial 'partials/banner' %>
 </div>
-<div class="container">
-  <!-- About Section -->
-  <%= partial 'partials/about' %>
-  <!-- Projects Section -->
-  <%= partial 'partials/projects' %>
-  <!-- Social Links Section -->
-  <%= partial 'partials/social' %>
+<div class="row my-5">
+  <div class="col-12">
+    <div class="container">
+      <div id="projects">
+        <h1 style="color: white; margin-bottom: 20px;">Current Projects</h1>
+      <div class="container">
+        <!-- About Section -->
+        <%= partial 'partials/about' %>
+          <div class="card-product">
+            <a href="#" class="project-image">
+              <%= image_tag 'projects/Plans-Tonight-Show-1.png', alt: 'Plans Tonight', class: 'image' %>
+            </a>
+            <div class="card-trip-infos">
+              <h2>Plans Tonight</h2>
+              <p>Plans Tonight was the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp. This app is designed to reduce the headache of choosing a date and time, invite friends to vote for the mood and alcohol type they prefer. Based on these choices, the app will decide on a bar for you!</p>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="#" class="project-image">
+              <%= image_tag 'projects/Kollab-Gradient-BK.png', alt: 'Plans Tonight', class: 'image' %>
+            </a>
+            <div class="card-trip-infos">
+              <h2>Kollab</h2>
+              <p>Plans Tonight was the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp. This app is designed to reduce the headache of choosing a date and time, invite friends to vote for the mood and alcohol type they prefer. Based on these choices, the app will decide on a bar for you!</p>
+            </div>
+          </div>
+            <%= partial 'partials/social' %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,8 +1,8 @@
 - name: PlansTonight
-  description: Decent description of the app
-  image: projects/placeholder.png
+  description: Plans Tonight was the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp. This app is designed to reduce the headache of choosing a date and time, invite friends to vote for the mood, and alcohol type they prefer. Based on these choices, the app will decide a Bar for you!
+  image: projects/Plans-Tonight-Show-1.png
   url: https://www.planstonight.lol
-  github: https://www.github.com
+  github: https://github.com/KAYYWHAT/plans_tonight
   online: true
 
 - name: Kollab

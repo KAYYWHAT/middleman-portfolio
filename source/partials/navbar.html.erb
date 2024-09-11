@@ -1,14 +1,17 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<nav class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <a class="profile-photo" href="#">
-      <%= image_tag 'projects/profileimage.jpeg', alt: 'profile photo', class: 'profile-photo' %>
-    </a>
+    <div class="d-flex align-items-center">
+      <a class="profile-photo" href="#">
+        <%= image_tag 'projects/profileimage.jpeg', alt: 'Profile photo', class: 'profile-photo' %>
+      </a>
+      <span class="ms-2 nav-link">Cadeyrn Rattur</span>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav ms-auto navbar-links">
         <li class="nav-item active">
           <a class="nav-link" href="#">About</a>
         </li>
@@ -21,4 +24,4 @@
       </ul>
     </div>
   </div>
-</div>
+</nav>

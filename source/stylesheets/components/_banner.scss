@@ -1,50 +1,121 @@
 .banner {
   width: 100vw;
   height: 70vh;
-  background-image:
-    image-url('projects/bannerimage.jpeg');
+  background-image: image-url('projects/bannerimage.jpeg');
   background-size: cover;
   background-position: center;
   color: #031602;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 170px;
+  padding: 20px; /* Padding for better responsiveness */
   box-sizing: border-box;
+  text-align: center; /* Center text horizontally */
 }
 
+/* Banner content styling */
 .banner-content {
   display: flex;
+  flex-direction: column; /* Stack content vertically */
   align-items: center;
   gap: 20px;
   max-width: 1000px;
   width: 100%;
 }
 
+/* Title main styling */
 .title-main {
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
 
+/* Subtitle styling */
 .subtitle {
   font-size: 1.2rem;
   margin-top: 10px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .banner {
+    height: 60vh; /* Adjust height for large screens */
+    padding: 30px; /* Adjust padding for larger screens */
+  }
 
-.profile-container {
-  flex: 0 0 auto;
+  .title-main {
+    font-size: 1.75rem; /* Adjust font size for large screens */
+  }
+
+  .subtitle {
+    font-size: 1.1rem; /* Adjust font size for large screens */
+  }
 }
 
+@media (max-width: 992px) {
+  .banner {
+    height: 50vh; /* Adjust height for tablets */
+    padding: 20px; /* Adjust padding for tablets */
+  }
+
+  .title-main {
+    font-size: 1.5rem; /* Adjust font size for tablets */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 45vh; /* Adjust height for medium screens */
+    padding: 15px; /* Adjust padding for medium screens */
+  }
+
+  .title-main {
+    font-size: 1.25rem; /* Adjust font size for medium screens */
+  }
+
+  .subtitle {
+    font-size: 0.9rem; /* Adjust font size for medium screens */
+  }
+
+  .banner-content {
+    gap: 15px; /* Adjust gap for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    height: 40vh; /* Further adjust height for small screens */
+    padding: 10px; /* Further reduce padding for small screens */
+  }
+
+  .title-main {
+    font-size: 1rem; /* Further reduce font size for small screens */
+  }
+
+  .subtitle {
+    font-size: 0.85rem; /* Further reduce font size for small screens */
+  }
+
+  .banner-content {
+    gap: 10px; /* Further reduce gap for small screens */
+  }
+}
+
+/* Profile photo styling */
 .profile-photo {
   width: 40px;
   height: 40px;
   border-radius: 20px;
 }
 
+/* Text container styling */
 .text-container {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center text horizontally */
+  text-align: center; /* Center text inside the container */
 }

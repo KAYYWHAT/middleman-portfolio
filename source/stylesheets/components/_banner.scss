@@ -7,115 +7,125 @@
   color: #031602;
   display: flex;
   align-items: center;
+  background-attachment: fixed;
   justify-content: center;
-  padding: 20px; /* Padding for better responsiveness */
-  box-sizing: border-box;
-  text-align: center; /* Center text horizontally */
+  padding: 2rem; /* Padding for better responsiveness */
+  box-sizing: border-box; /* Center text horizontally */
 }
 
-/* Banner content styling */
 .banner-content {
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center;
-  gap: 20px;
-  max-width: 1000px;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center; /* Center vertically within the banner */
+  gap: 1rem;
+  max-width: 90%;
   width: 100%;
 }
 
-/* Title main styling */
-.title-main {
-  font-size: 2rem;
-  font-weight: bold;
+.title-main, .subtitle {
   margin: 0;
+  line-height: 1.2;
 }
 
-/* Subtitle styling */
+.title-main {
+  font-size: 5vw; /* Responsive font size */
+}
+
 .subtitle {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  font-size: 3vw; /* Responsive font size */
 }
 
-/* Responsive adjustments */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center social icons horizontally */
+  margin-top: 1rem; /* Space between text and social icons */
+}
+
+.button-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0.5rem; /* Space between social buttons */
+}
+
 @media (max-width: 1200px) {
   .banner {
-    height: 60vh; /* Adjust height for large screens */
-    padding: 30px; /* Adjust padding for larger screens */
+    height: 70vh; /* Adjusted height for better visibility */
+    padding: 1.5rem;
   }
 
   .title-main {
-    font-size: 1.75rem; /* Adjust font size for large screens */
+    font-size: 4vw;
   }
 
   .subtitle {
-    font-size: 1.1rem; /* Adjust font size for large screens */
+    font-size: 2.5vw;
   }
 }
 
 @media (max-width: 992px) {
   .banner {
-    height: 50vh; /* Adjust height for tablets */
-    padding: 20px; /* Adjust padding for tablets */
+    height: 60vh; /* Adjusted height for better visibility */
+    padding: 1rem;
   }
 
   .title-main {
-    font-size: 1.5rem; /* Adjust font size for tablets */
+    font-size: 3.5vw;
   }
 
   .subtitle {
-    font-size: 1rem; /* Adjust font size for tablets */
+    font-size: 2vw;
   }
 }
 
 @media (max-width: 768px) {
   .banner {
-    height: 45vh; /* Adjust height for medium screens */
-    padding: 15px; /* Adjust padding for medium screens */
+    height: 50vh; /* Adjusted height for better visibility */
+    padding: 0.75rem;
   }
 
   .title-main {
-    font-size: 1.25rem; /* Adjust font size for medium screens */
+    font-size: 3vw;
   }
 
   .subtitle {
-    font-size: 0.9rem; /* Adjust font size for medium screens */
+    font-size: 1.75vw;
   }
 
   .banner-content {
-    gap: 15px; /* Adjust gap for medium screens */
+    gap: 0.75rem;
   }
 }
 
 @media (max-width: 576px) {
   .banner {
-    height: 40vh; /* Further adjust height for small screens */
-    padding: 10px; /* Further reduce padding for small screens */
+    height: 40vh; /* Adjusted height for better visibility */
+    padding: 0.5rem;
   }
 
   .title-main {
-    font-size: 1rem; /* Further reduce font size for small screens */
+    font-size: 6vw;
   }
 
   .subtitle {
-    font-size: 0.85rem; /* Further reduce font size for small screens */
+    font-size: 5vw;
   }
 
   .banner-content {
-    gap: 10px; /* Further reduce gap for small screens */
+    gap: 0.5rem;
   }
 }
 
-/* Profile photo styling */
 .profile-photo {
   width: 40px;
   height: 40px;
   border-radius: 20px;
 }
 
-/* Text container styling */
 .text-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center text horizontally */
-  text-align: center; /* Center text inside the container */
+  align-items: flex-start; /* Align text to the left */
+  text-align: left; /* Align text within the container */
 }

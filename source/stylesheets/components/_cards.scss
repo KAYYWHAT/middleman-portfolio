@@ -2,8 +2,14 @@
 .card-container {
   display: flex;
   flex-wrap: wrap; /* Allows cards to wrap onto the next line if there’s not enough space */
-  gap: 16px; /* Space between cards */
+  gap: 1rem; /* Space between cards */
   justify-content: center; /* Centers the cards horizontally */
+}
+
+.card-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between cards */
 }
 
 /* Individual card styling */
@@ -14,11 +20,15 @@
   max-width: 700px; /* Adjust max width as needed */
   flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
   background-color: #333; /* Background color of card */
+  width: 100%;
+  max-width: 400px;
 }
 
 /* Styling for images */
 .project-image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .image {
@@ -31,6 +41,7 @@
 .card-trip-infos {
   padding: 16px;
   color: #fff; /* Set text color to white */
+  padding: 1rem;
 }
 
 .card-trip-infos h2 {

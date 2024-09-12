@@ -25,6 +25,19 @@
   font-weight: lighter;
 }
 
+.btn-blk {
+  color: #031602;
+  border: 2px solid #031602;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border-radius: 50px;
+}
+
 .btn-ghost:hover {
   opacity: 1;
+}
+
+.btn-blk:hover {
+  opacity: 1;
+  color: #ebebeb;
 }

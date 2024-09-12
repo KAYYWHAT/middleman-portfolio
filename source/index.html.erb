@@ -4,41 +4,49 @@
 <div>
   <%= partial 'partials/banner' %>
 </div>
-<div class="row my-5">
-  <div class="col-12">
-    <div class="container">
-      <div id="projects">
-        <h1 class="roboto-bold" style="color: white; margin-bottom: 20px;"> Recent Projects</h1>
-      <div class="container">
-        <!-- About Section -->
-        <%= partial 'partials/about' %>
-        <div class="card-container">
-  <div class="card-product">
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/Plans-Tonight-Show-1.png', alt: 'Plans Tonight', class: 'image' %>
-    </a>
-    <div class="card-trip-infos">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Plans Tonight</h2>
-      <a class="btn btn-ghost roboto-regular margin-right: 16px;" href="#">Mobile App</a>
-    </div>
-    <p>Plans Tonight was the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp. This app is designed to reduce the headache of choosing a date and time, invite friends to vote for the mood and alcohol type they prefer. Based on these choices, the app will decide on a bar for you!</p>
-    <p>2 Weeks</p>
-    </div>
-  </div>
 
-  <div class="card-product">
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/Kollab-Gradient-BK.png', alt: 'Kollab', class: 'image' %>
-    </a>
-    <div class="card-trip-infos">
-      <h2>Kollab</h2>
-      <h3>Role: Lead Developer</h2>
-      <p>Kollab was another project where the main focus was to create a collaborative platform. Features include real-time communication and integration with various services.</p>
-      <p>1 Weeks</p>
+<div class="container my-5">
+  <div id="projects">
+    <h1 class="roboto-bold" style="color: white; margin-bottom: 20px;">Recent Projects</h1>
+
+    <!-- About Section -->
+    <%= partial 'partials/about' %>
+
+    <div class="card-container">
+      <div class="card-products">
+        <div class="card-product">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Plans-Tonight-Show-1.png', alt: 'Plans Tonight', class: 'image' %>
+          </a>
+          <div class="card-trip-infos">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2>Plans Tonight</h2>
+              <a class="btn btn-ghost roboto-regular" href="#">Mobile App</a>
+            </div>
+            <p>Plans Tonight was the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp. This app is designed to reduce the headache of choosing a date and time, invite friends to vote for the mood and alcohol type they prefer. Based on these choices, the app will decide on a bar for you!</p>
+            <p>2 Weeks</p>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Kollab-Gradient-BK.png', alt: 'Kollab', class: 'image' %>
+          </a>
+          <div class="card-trip-infos">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2>Kollab</h2>
+              <a class="btn btn-ghost roboto-regular" href="#">Web Page</a>
+            </div>
+            <h3>Role: Lead Developer</h3>
+            <p>Kollab was another project where the main focus was to create a collaborative platform. Features include real-time communication and integration with various services.</p>
+            <p>1 Week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <%= partial 'partials/social' %>
     </div>
   </div>
-</div>
-<div>
-  <%= partial 'partials/social' %>
 </div>

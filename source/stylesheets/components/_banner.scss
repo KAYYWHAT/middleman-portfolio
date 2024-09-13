@@ -8,7 +8,7 @@
   align-items: center;
   background-attachment: fixed;
   justify-content: center;
-  padding: 2rem; /* Padding for better responsiveness */
+  padding: 3rem; /* Padding for better responsiveness */
   box-sizing: border-box; /* Center text horizontally */
 }
 
@@ -20,6 +20,13 @@
   gap: 1rem;
   max-width: 90%;
   width: 100%;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  gap: 16px; /* Space between buttons */
+  margin-top: 1rem; /* Space above the button container */
 }
 
 .title-main, .subtitle {
@@ -50,7 +57,7 @@
 
 @media (max-width: 1200px) {
   .banner {
-    height: 35vh; /* Adjusted height for better visibility */
+    height: 30vh; /* Adjusted height for better visibility */
     padding: 3rem;
   }
 

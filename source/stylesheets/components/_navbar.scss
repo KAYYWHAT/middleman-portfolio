@@ -27,9 +27,22 @@
   transition: color 0.3s ease; /* Smooth transition effect */
 }
 
+/* Remove the default styling for visited links */
+.nav-link:visited {
+  color: white; /* Ensure visited links have the same color as unvisited links */
+}
+
+/* Change color on hover */
 .nav-link:hover {
   color: greenyellow; /* Hover color */
 }
+
+/* Ensure focus state styling is consistent */
+.nav-link:focus {
+  color: white; /* Maintain the same color as the default state */
+  outline: none; /* Remove default outline if needed */
+}
+
 
 /* Navbar toggler button */
 .navbar-toggler {

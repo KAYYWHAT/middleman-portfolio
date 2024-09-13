@@ -1,4 +1,4 @@
-# Activate and configure extensions
+ Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :autoprefixer do |prefix|
@@ -44,9 +44,3 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
-
-# config.rb
-activate :directory_indexes  # Allows pretty URLs without .html
-
-# Define custom routes here
-page 'partials/contactme.html', layout: 'contactme'

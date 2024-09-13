@@ -44,3 +44,9 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+# config.rb
+activate :directory_indexes  # Allows pretty URLs without .html
+
+# Define custom routes here
+page 'partials/contactme.html', layout: 'contactme'

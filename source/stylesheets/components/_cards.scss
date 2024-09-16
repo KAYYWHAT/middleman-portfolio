@@ -7,6 +7,7 @@
   margin: 0 auto; /* Centers the container itself */
   max-width: 1200px; /* Adjust max width as needed */
   padding: 1rem; /* Padding around the container */
+  box-sizing: border-box;
 }
 
 /* Individual card styling */
@@ -14,6 +15,7 @@
   display: flex;
   flex-direction: column; /* Ensures cards stack vertically */
   gap: 2rem; /* Space between cards */
+  width: 100%;
 }
 
 /* Card product styling */
@@ -27,6 +29,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* Hover effect for card */
@@ -50,8 +53,8 @@
 
 /* Information inside the card */
 .card-trip-infos {
-  color: #fff; /* Set text color to white */
   padding: 1rem; /* Padding around the text */
+  overflow: visible;
 }
 
 .card-trip-infos h1 {

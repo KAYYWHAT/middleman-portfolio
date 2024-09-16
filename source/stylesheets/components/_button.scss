@@ -1,43 +1,67 @@
+// Base styling for social buttons
 .button-social {
   padding: 0 16px;
   position: relative;
-  font-size: 20px;
-
-  &:hover {
-    opacity: 0.7;
-  }
+  font-size: 16px; /* Adjust font size */
+  display: inline-block; /* Ensures proper button styling */
+  text-align: center; /* Center align text */
+  border-radius: 50px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+// Styling for link within social buttons
 .button-social-link {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-ghost {
-  color: #ebebeb;
-  border: 1px solid #ebebeb;
-  padding: 8px 12px;
-  margin-bottom: 12px;
-  border-radius: 50px;
-  font-weight: lighter;
+// Group buttons together
+.btn-group {
+  display: flex; /* Align buttons horizontally */
+  gap: 0.25rem; /* Space between buttons */
 }
 
+// Black button styling
 .btn-blk {
   color: #031602;
   border: 2px solid #031602;
   padding: 8px 12px;
   margin-bottom: 12px;
   border-radius: 50px;
-}
-
-.btn-ghost:hover {
-  opacity: 1;
+  background-color: transparent; /* Default background */
+  font-size: 16px; /* Ensure consistent font size */
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .btn-blk:hover {
-  opacity: 1;
+  background-color: #031602; /* Darker background color on hover */
+  color: #ebebeb; /* Text color on hover */
+  border-color: #031602; /* Maintain border color on hover */
+}
+
+// Ghost button styling
+.btn-ghost {
   color: #ebebeb;
+  border: 1px solid #ebebeb;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border-radius: 50px;
+  background-color: transparent; /* Default background */
+  font-size: 16px; /* Ensure consistent font size */
+  font-weight: lighter;
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-ghost:hover {
+  background-color: #333; /* Darker background color on hover */
+  border-color: #ccc; /* Lighter border color on hover */
+  color: #ebebeb; /* Maintain text color */
 }

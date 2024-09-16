@@ -1,39 +1,62 @@
-// Import Google fonts
+// Import Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Quicksand", "Helvetica", "sans-serif";
 
+// Base font settings for body text
+body {
+  font-family: $body-font;
+  color: #031602; // Text color
+}
+
+// Base font settings for headers
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headers-font;
+  color: #031602; // Header color
+}
+
+// Regular Roboto styles
 .roboto-regular {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 400; // Normal weight
   font-style: normal;
-  color: #031602;
+  color: #031602; // Text color
 }
 
+// Bold Roboto styles
 .roboto-bold {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 700; // Bold weight
   font-style: normal;
-  color: #031602;
+  color: #031602; // Text color
 }
 
-.roboto-regular p {
-  font-size: 20px; /* Adjust size as needed */
-}
-
+// Regular Roboto styles with italic
 .roboto-regular-italic {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 400; // Normal weight
   font-style: italic;
+  color: #031602; // Text color
 }
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+
+// Font sizes for paragraphs and headers
+.roboto-regular p {
+  font-size: 1.125rem; // Adjust size as needed (20px equivalent)
+}
+
+.roboto-regular h1 {
+  font-size: 2.5rem; // Adjust size as needed (50px equivalent)
+}
+
+// Responsive adjustments for mobile
+@media (max-width: 768px) {
+  .roboto-regular p {
+    font-size: 1rem; // Smaller font size for mobile
+  }
+
+  .roboto-regular h1 {
+    font-size: 1.75rem; // Smaller font size for mobile
+  }
+}

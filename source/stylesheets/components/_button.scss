@@ -65,3 +65,22 @@
   border-color: #ccc; /* Lighter border color on hover */
   color: #ebebeb; /* Maintain text color */
 }
+
+.tech-icons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the icons */
+  margin-top: 1rem;
+}
+
+.tech-icon {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.tech-icon:last-child {
+  margin-right: 0; /* Remove the margin from the last icon */
+}

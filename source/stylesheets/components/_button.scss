@@ -84,3 +84,26 @@
 .tech-icon:last-child {
   margin-right: 0; /* Remove the margin from the last icon */
 }
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .button-social {
+    font-size: 8px; /* Smaller font size for mobile */
+  }
+
+  .btn-blk {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 6px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .btn-ghost {
+    font-size: 8px; /* Smaller font size for mobile */
+    padding: 6px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .tech-icon {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 0.05rem;
+    margin-left: 0.05rem;
+  }
+}

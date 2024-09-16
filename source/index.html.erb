@@ -6,13 +6,9 @@
 </div>
 
 <div class="container my-5">
-  <div id="projects">
-    <h1 class="roboto-bold" style="color: white; margin-bottom: 20px;">Recent Projects</h1>
+    <h1 class="roboto-bold" style="color: white;">Recent Projects</h1>
 
-    <!-- About Section -->
-    <%= partial 'partials/about' %>
-
-    <div class="card-container">
+    <div class="card-container" style="margin-top: 1rem;">
       <div class="card-products">
 
       <div class="card-product">
@@ -28,7 +24,7 @@
             </div>
           </div>
           <h3 class="roboto-regular" style="color: #031602;">Role: Lead Developer</h3>
-          <p style="color: #031602">Plans Tonight reduces the headache of organising plans with friends. Pick a date and time, invite your friends and everyone can vote for things like the mood and alcohol of the evening. Based on these choices, the app chooses on a bar for you!</p>
+          <p style="color: #031602">Plans Tonight reduces the headache of organising plans with friends. Based off you and your friends preferences the app chooses on a bar for you!</p>
           <p style="color: #031602">2 Weeks</p>
               <div class="tech-icons mt-3">
                 <%= image_tag 'projects/HTML5.svg', alt: 'HTML5', class: 'tech-icon' %>
@@ -99,13 +95,11 @@
       </div>
     </div>
   </div>
+  <div>
+    <%= partial 'partials/contactme' %>
   </div>
-        <div>
-      <%= partial 'partials/contactme' %>
-    </div>
 
-    <div>
-      <%= partial 'partials/social' %>
-    </div>
+  <div>
+    <%= partial 'partials/social' %>
   </div>
 </div>

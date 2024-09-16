@@ -2,26 +2,37 @@
 .card-container {
   display: flex;
   flex-wrap: wrap; /* Allows cards to wrap onto the next line if there’s not enough space */
-  gap: 1rem; /* Space between cards */
+  gap: 2rem; /* Space between cards */
   justify-content: center; /* Centers the cards horizontally */
-}
-
-.card-products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; /* Space between cards */
+  margin: 0 auto; /* Centers the container itself */
+  max-width: 1200px; /* Adjust max width as needed */
+  padding: 1rem; /* Padding around the container */
 }
 
 /* Individual card styling */
+.card-products {
+  display: flex;
+  flex-direction: column; /* Ensures cards stack vertically */
+  gap: 2rem; /* Space between cards */
+}
+
+/* Card product styling */
 .card-product {
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
-  max-width: 700px; /* Adjust max width as needed */
-  flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis */
   background-color: #6C757D; /* Background color of card */
-  width: 100%;
-  max-width: 400px;
+  flex: 1 1 100%; /* Each card takes full width of its container */
+  max-width: 100%; /* Ensure card does not exceed container width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect for card */
+.card-product:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 /* Styling for images */
@@ -39,21 +50,20 @@
 
 /* Information inside the card */
 .card-trip-infos {
-  padding: 16px;
   color: #fff; /* Set text color to white */
-  padding: 1rem;
+  padding: 1rem; /* Padding around the text */
 }
 
-.card-trip-infos h2 {
+.card-trip-infos h1 {
   margin: 0 0 8px;
-  font-size: 1.5em;
+  font-size: 1.5rem; /* Font size adjusted for better readability */
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 
 .card-trip-infos p {
   margin: 0;
-  font-size: 1em;
+  font-size: 1rem; /* Font size adjusted for better readability */
   font-family: 'Roboto', sans-serif;
 }
 

@@ -70,13 +70,18 @@
 
 /* Information inside the card */
 .card-trip-infos {
-  padding: 2rem; /* Padding around the text */
+  padding: 1.5rem; /* Padding around the text */
   overflow: visible;
 }
 
 .card-trip-infos h1 {
   margin: 0 0 8px;
   font-size: 3rem; /* Font size adjusted for better readability */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.mt3 :hover {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }

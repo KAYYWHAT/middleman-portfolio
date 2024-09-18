@@ -55,6 +55,13 @@
   margin: 0 0.5rem; /* Space between social buttons */
 }
 
+@media (max-width: 1920px) {
+  .imagekollab {
+    width: 50%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+  }
+}
 @media (max-width: 1200px) {
   .banner {
     height: 30vh; /* Adjusted height for better visibility */
@@ -71,6 +78,12 @@
 
   .banner-content {
     gap: 0.5rem;
+  }
+
+  .imagekollab {
+    width: 25%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
   }
 }
 
@@ -90,6 +103,11 @@
 
   .banner-content {
     gap: 0.5rem;
+  }
+  .imagekollab {
+    width: 25%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
   }
 }
 
@@ -129,6 +147,12 @@
   .banner-content {
     gap: 0.5rem;
   }
+  .imagekollab {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+  }
+
 }
 
 .profile-photo {

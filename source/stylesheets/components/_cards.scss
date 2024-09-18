@@ -31,6 +31,15 @@
   overflow: hidden;
 }
 
+.card-show {
+  max-width: 100%; /* Ensure card does not exceed container width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 /* Hover effect for card */
 .card-product:hover {
   transform: translateY(-10px); /* Lift the card on hover */
@@ -49,6 +58,15 @@
   height: auto;
   object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
 }
+
+.image-group a {
+  margin-right: 15px; /* Adjust as necessary */
+}
+
+.image-group a:last-child {
+  margin-right: 0; /* Remove margin from the last image */
+}
+
 
 /* Information inside the card */
 .card-trip-infos {

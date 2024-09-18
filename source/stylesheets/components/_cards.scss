@@ -52,7 +52,7 @@
 
 /* Information inside the card */
 .card-trip-infos {
-  padding: 1rem; /* Padding around the text */
+  padding: 2rem; /* Padding around the text */
   overflow: visible;
 }
 
@@ -95,4 +95,5 @@
   .card-trip-infos p {
     font-size: 0.75rem; /* Smaller font size for mobile */
   }
+
 }

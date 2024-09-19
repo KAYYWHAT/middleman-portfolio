@@ -1,0 +1,51 @@
+<div>
+  <%= partial 'partials/navbar' %>
+</div>
+
+  <div class="banner-content2">
+    <div class="roboto-regular" style="color: white; margin-top: 2rem;">
+      <p>ALTERPHORM is a project inspired by certain influences that are exposed to the youth throughout life growing up in specifically but not limited to Melbourne, Australia. That is, if the youth choose to follow this path on their own will. Many are influenced by external factors and other distractions of life that seem to guide them in the right direction in society's eyes, but constantly seeking adrenaline and perfection in detail keeps these influences relevant in our lives. Searching for second hand clothes that ultimately curate our own style, continuously trying the same trick at the skatepark until pushing yourself to physical incapability, trying to get that perfect shot on your favourite film camera without wasting film, focusing so hard to not mess up a painting, and even simply going out with friends to a gritty unlisted event in the middle of nowhere. These situations are what ALTERPHORM grew from and the people who have spent hours experiencing this type of life all have a mutual understanding of one another to some degree. Our creative endeavours are how we build our own characteristics that bring us to our ALTERPHORM of thinking, that is if it is for the better or worse of our own mental wellbeing.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Main Container -->
+<div class="main-container">
+  <div class="container my-5">
+    <div class="card-products">
+      <div class="card-show">
+        <a href="#" class="project-image">
+          <%= image_tag 'projects/Alterphorm-T1F.png', alt: 'First Image', class: 'image' %>
+        </a>
+      </div>
+      <!-- Images in Flexbox -->
+      <div class="tech-icons">
+        <div class="display-icon">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Alterphorm-T2F.png', alt: 'Second Image', class: 'image' %>
+          </a>
+        </div>
+        <div class="display-icon">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Alterphorm-C1F.png', alt: 'Third Image', class: 'image' %>
+          </a>
+        </div>
+      </div>
+      <!-- Technology Icons -->
+      <div class="tech-icons">
+        <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
+        <%= image_tag 'projects/AdobePhotoshop.svg', alt: 'Figma', class: 'tech-icon' %>
+        <%= image_tag 'projects/AdobePremierePro.svg', alt: 'Bootstrap', class: 'tech-icon' %>
+      </div>
+      <!-- Button Group -->
+      <div class="btn-group">
+        <a class="btn btn-ghost roboto-regular" href="https://kollabart-5a9192f4e8a9.herokuapp.com/" target="_blank" rel="noopener noreferrer">Link to Web Page</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Social Partial -->
+<div>
+  <%= partial 'partials/social' %>
+</div>

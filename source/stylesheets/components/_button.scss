@@ -107,3 +107,54 @@
     margin-left: 0.05rem;
   }
 }
+/* app/assets/stylesheets/application.scss */
+.btn-dark {
+  background-color: greenyellow;
+  color: #6C757D;
+  font-weight: 900;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-dark:hover {
+  background-color: limegreen;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-dark:active {
+  background-color: darkgreen;
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-dark:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.contact-input {
+  transition: font-weight 0.2s ease;
+}
+
+.contact-input:hover {
+  font-weight: bold;
+}
+
+.btn-dark {
+  transition: background-color 0.2s ease, color 0.2s ease, font-weight 0.2s ease;
+}
+
+.btn-dark:hover {
+  background-color: #495057;
+  color: white;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  font-weight: bold;
+}

@@ -6,3 +6,73 @@
   max-width: 1200px;       // Maximum width of the container
   box-sizing: border-box;  // Include padding in the width calculation
 }
+.image-flex-container {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 1rem; /* Optional: adds space between items if needed */
+}
+
+.card-show {
+  flex: 1; /* Ensures cards grow and shrink as needed */
+  max-width: calc(50% - 0.5rem); /* Ensures items take up half of the container width minus gap */
+}
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line if there’s not enough space */
+  gap: 2rem; /* Space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  margin: 0 auto; /* Centers the container itself */
+  max-width: 1200px; /* Adjust max width as needed */
+  padding: 1rem; /* Padding around the container */
+  box-sizing: border-box;
+}
+
+/* Image Flex Container */
+.image-flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 1rem; /* Adds space between items */
+}
+
+/* Responsive card styling */
+.card-show {
+  flex: 1; /* Ensures items grow and shrink as needed */
+  max-width: calc(50% - 1rem); /* Adjusts width for two items in a row */
+}
+
+/* Ensure images are responsive */
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .card-show {
+    max-width: calc(100% - 1rem); /* Full width on small screens */
+  }
+
+  .image-flex-container {
+    flex-direction: column; /* Stacks items vertically on smaller screens */
+    gap: 1rem; /* Adjust gap if necessary */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-trip-infos h1 {
+    font-size: 1.25rem; /* Smaller font size for very small screens */
+  }
+
+  .card-trip-infos h3 {
+    font-size: 0.875rem; /* Smaller font size for very small screens */
+  }
+
+  .card-trip-infos p {
+    font-size: 0.75rem; /* Smaller font size for very small screens */
+  }
+}

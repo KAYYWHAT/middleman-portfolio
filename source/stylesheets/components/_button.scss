@@ -2,7 +2,7 @@
 .button-social {
   padding: 0 16px;
   position: relative;
-  font-size: 16px; /* Adjust font size */
+  font-size: 40px; /* Adjust font size */
   display: inline-block; /* Ensures proper button styling */
   text-align: center; /* Center align text */
   border-radius: 50px;
@@ -94,7 +94,7 @@
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .button-social {
-    font-size: 8px; /* Smaller font size for mobile */
+    font-size: 25px; /* Smaller font size for mobile */
   }
 
   .btn-blk {
@@ -108,8 +108,8 @@
   }
 
   .tech-icon {
-    width: 20px; /* Adjust size as needed */
-    height: auto;
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
     margin-right: 0.05rem;
     margin-left: 0.05rem;
   }

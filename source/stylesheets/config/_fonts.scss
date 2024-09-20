@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #031602; // Text color
 }
 
+
 // Bold Roboto styles
 .roboto-bold {
   font-family: "Roboto", sans-serif;
@@ -46,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.125rem; // Adjust size as needed (20px equivalent)
 }
 
+
 .roboto-regular h1 {
   font-size: 2.5rem; // Adjust size as needed (50px equivalent)
 }
@@ -58,5 +60,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .roboto-regular h1 {
     font-size: 1.75rem; // Smaller font size for mobile
+  }
+}
+
+@media (max-width: 576px) {
+  .roboto-regular p {
+  font-size: 0.75rem; /* Larger font size for smaller screens */
   }
 }

@@ -110,12 +110,14 @@
   }
 
   .card-trip-infos h3 {
-    font-size: 1rem; /* Smaller font size for mobile */
+    font-size: 1.3rem; /* Smaller font size for mobile */
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
   }
 
   .card-trip-infos p {
-    font-size: 0.75rem; /* Smaller font size for mobile */
+    font-size: 1rem; /* Smaller font size for mobile */
+    font-family: 'Roboto', sans-serif;
   }
 
 }

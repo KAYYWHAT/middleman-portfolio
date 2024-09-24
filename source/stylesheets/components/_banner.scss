@@ -13,13 +13,13 @@
 }
 
 .banner2 {
-  position: relative;
   width: 100vw;
   height: 60vh;
-  overflow: hidden;
-  color: #031602;
-  display: flex;
+  background-image: image-url('projects/SUPL.jpeg');
+  background-size: cover;
+  background-position: center;
   align-items: center;
+  background-attachment: fixed;
   justify-content: center;
   padding: 3rem;
   box-sizing: border-box;

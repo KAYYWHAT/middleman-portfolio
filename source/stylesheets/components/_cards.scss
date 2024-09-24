@@ -172,3 +172,22 @@
   height: 100%;
   border: 0;
 }
+.textflex {
+  display: flex; /* This makes the container a flexbox */
+  align-items: flex-start; /* Align items at the start along the cross axis */
+  gap: 20px; /* Optional: Adds some space between the image and the text */
+}
+
+.textflex div {
+  flex: 1; /* Each div takes up an equal amount of space */
+}
+
+.project-image {
+  max-width: 100%; /* Make sure the image does not exceed its container */
+  max-height: 100%; /* Optional: Control the height of the image */
+}
+
+.image {
+  width: 100%; /* The image will fill the width of its parent div */
+  height: auto; /* Maintain the aspect ratio of the image */
+}

@@ -1,91 +1,107 @@
 <div>
   <%= partial 'partials/navbar' %>
 </div>
-<div>
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/SUPL.jpg', alt: 'SUPL', class: 'image' %>
-    </a>
-</div>
-<div class="container my-5">
-<div class="textflex">
-  <div>
-    <h1 class="roboto-bold" style="color: white; font-size: 125px">SUPL</h1>
-    <p class="roboto-regular" style="color: white;">
-      As the boundaries of physics knowledge are pushed further into the unknown, the Stawell Underground Physics Lab (SUPL) aims to tackle one of the greatest mysteries currently perplexing modern science: Dark Matter. The aptly named substance is shrouded in darkness with very little understood about its nature and role in the universe. In fact, one of the only things we know for certain is that it exists! So to shed light on this fickle particle, the SUPL team aims to join the search with their underground lab being constructed in the goldmines 1km below Stawell, Victoria. This is to ensure the reduction of interference by cosmic rays in the linear accelerator and other instruments that will be employed in the hunt for the elusive dark matter particle.
-      The construction of the lab utilises the cutting-edge of 21st century mining technology, shaping the decommissioned gold mines of Stawell into the first (and one of the most advanced) laboratories in the southern hemisphere.
-    </p>
-  </div>
-  <div>
-        <a href="#" class="project-image">
-      <%= image_tag 'projects/Stawell.jpeg', alt: 'SUPL', class: 'image' %>
-    </a>
+<!-- Image with text and logo overlay -->
+<div class="image-container" style="position: relative; max-height: 600px; overflow: hidden; align-items: center; background-size: cover; background-position: center; object-fit: cover;">
+  <!-- Main Image with reduced height -->
+  <%= image_tag 'projects/Stawell.jpeg', alt: 'SUPL', class: 'image', style: 'width: 100%; height: 600px; object-fit: cover;' %>
+
+  <!-- Text overlay on the top-left with padding -->
+  <div class="overlay-content" style="position: absolute; top: 2.5%; left: 5%; color: white; text-align: left;">
+    <h1 class="roboto-bold" style="font-size: 6rem; color: white; margin-bottom: 0rem;">SUPL</h1>
+    <p class="roboto-regular" style="font-size: 18px; color: white; margin-bottom: 0rem;">Seeks to unravel the mystery of Dark Matter using a state-of-the-art underground lab 1km below Stawell, Victoria.</p>
+    <p class="roboto-regular" style="font-size: 18px; color: white; margin-bottom: 0rem;">Designed to minimize cosmic interference and join the global search for this elusive particle, making it one of the most advanced labs in the southern hemisphere.</p>
+    <div class="button-container" style="margin-top: 1rem;">
+      <a class="btn btn-ghost roboto-bold" style="color: white;" href="https://www.supl.org.au/" target="_blank">More Info</a>
     </div>
-      </div>
-      <div>
+  </div>
+
+  <!-- Brand Logo in the bottom-right corner -->
+  <div class="logo-container" style="position: absolute; bottom: 5%; right: 5%; width: 150px;">
+    <%= image_tag 'projects/SUPL.jpg', alt: 'SUPL Logo', class: 'image' %>
+  </div>
+</div>
+<!-- Container for other content -->
+<div class="container my-5">
+  <div class=>
         <a href="#" class="project-image" style="margin-top: 2rem;">
           <%= image_tag 'projects/ProblemDef.png', alt: 'Problem', class: 'image' %>
         </a>
     </div>
-    <div>
+
+       <div>
       <a href="#" class="project-image" style="margin-top: 2rem;">
         <%= image_tag 'projects/InitialResearch.png', alt: 'research', class: 'image' %>
       </a>
     </div>
 
-  <h1 class="roboto-regular" style="color: white; margin-top: 2rem;"> <strong>Benchmarching</strong></h1>
-  <div>
+  <!-- Benchmarking section -->
+  <h1 class="roboto-regular" style="color: white; margin-top: 2rem;"><strong>Benchmarking</strong></h1>
   <div class="textflex" style="margin-top: 1rem;">
-  <div>
-      <a href="#" class="project-image" style="margin-top: 1rem;">
-      <%= image_tag 'projects/Scienceworks.jpeg', alt: 'scienceworks', class: 'image1' %>
-    </a>
-    <h3 class="roboto-bold" style="color: white; margin-top: 1rem;">Scienceworks (Museums Victoria)</h3><p>Opening in 1992, Scienceworks has been a staple of science education and family activities for almost 20 years. The centre ‘links industry, heritage and applied technology’ in order to help young kids ask why and find out how. Scienceworks offers rotating exhibits, core science fun and extensions including the Melbourne Planetarium, The Lightning Room and Sportsworks to deliver unforgettable experiences.
-</p>
-</div>
-<div>
-      <a href="#" class="project-image" style="margin-top: 1rem;">
-      <%= image_tag 'projects/NGV.jpg', alt: 'NGV', class: 'image1' %>
-    </a>
-    <h3 class="roboto-bold" style="color: white; margin-top: 1rem;">National Gallery Victoria (Melbourne)</h3><p>The oldest, and most visited gallery in Australia, the National Gallery of Victoria holds over 70,000 works of art that span thousands of years, ideas, cultures and styles. Operating since 1861, the NGV houses a range of exhibits that balance history with contemporary works, and uses technology subtly across the experience to assist in the appreciation and experience. An example is the new NGV App to help visitors navigate collections, exhibitions and programs, and include features like location mapping, behind-the-scenes videos, and interviews.
-</p>
-</div>
-<div>
-      <a href="#" class="project-image" style="margin-top: 1rem;">
-      <%= image_tag 'projects/Valencia.jpg', alt: 'Valencia', class: 'image1' %>
-    </a>
-    <h3 class="roboto-bold" style="color: white; margin-top: 1rem;">City of Arts and Science Center (Valencia)</h3><p>The City of Arts and Sciences (la Ciudad de las Artes y las Ciencias in Spanish) is a complex consisting of many buildings, open spaces and structures paying homage to the pinnacles of human ingenuity and creativity. The largest of its kind in Europe, The City incorporates architecture and futurism into the design, experience and exhibits to ‘stimulate the mind and soul’. The 2 square-km “City” hosts an aquarium, science museum, planetarium, IMAX cinema, arts centre and parks among its many features.
-</p>
-</div>
-</div>
-  <h2 class="roboto-regular" style="color: white;"> User research</h2>
-  <h2 class="roboto-regular" style="color: white;"> Insights</h2>
-  <h2 class="roboto-regular" style="color: white;"> Persona</h2>
-  <h2 class="roboto-regular" style="color: white;"> How might we</h2>
-  <h2 class="roboto-regular" style="color: white;"> Lotus</h2>
-  <h2 class="roboto-regular" style="color: white;"> Prototyping</h2>
-  <h1 class="roboto-regular" style="color: white;"> Layout </h1>
-  <h1 class="roboto-regular" style="color: white;"> Smartphone app </h1>
-  <h1 class="roboto-regular" style="color: white;"> Website community hub </h1>
-  <h1 class="roboto-regular" style="color: white;"> AR Helemet </h1>
-</div>
-      <div class="tech-icons mt-5">
-        <%= image_tag 'projects/HTML5.svg', alt: 'HTML5', class: 'tech-icon' %>
-        <%= image_tag 'projects/CSS3.svg', alt: 'CSS3', class: 'tech-icon' %>
-        <%= image_tag 'projects/JavaScript.svg', alt: 'JavaScript', class: 'tech-icon' %>
-        <%= image_tag 'projects/RubyonRails.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
-        <%= image_tag 'projects/Ruby.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
-        </div>
-        <div class="tech-icons">
-        <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
-        <%= image_tag 'projects/Figma.svg', alt: 'Figma', class: 'tech-icon' %>
-        <%= image_tag 'projects/Bootstrap.svg', alt: 'Bootstrap', class: 'tech-icon' %>
-    </div>
-              <div class="btn-group mt-5">
-              <a class="btn btn-ghost roboto-regular" href="https://www.planstonight.lol/users/sign_in" target="_blank" rel="noopener noreferrer">Link to App</a>
-          </div>
-          </div>
 
-  <div>
-    <%= partial 'partials/social' %>
+    <!-- Scienceworks -->
+    <div class="benchmark-item" style="margin-top: 1rem;">
+      <a href="#" class="project-image">
+        <%= image_tag 'projects/Scienceworks.jpeg', alt: 'Scienceworks', class: 'image1' %>
+      </a>
+      <h3 class="roboto-bold" style="color: white; margin-top: 1rem;">Scienceworks (Museums Victoria)</h3>
+      <p>Since 1992, Scienceworks has offered engaging science education through interactive exhibits, the Melbourne Planetarium, The Lightning Room, and Sportsworks, making it a popular destination for families and young learners.</p>
+    </div>
+
+    <!-- NGV -->
+    <div class="benchmark-item" style="margin-top: 1rem;">
+      <a href="#" class="project-image">
+        <%= image_tag 'projects/NGV.jpg', alt: 'NGV', class: 'image1' %>
+      </a>
+      <h3 class="roboto-bold" style="color: white; margin-top: 1rem;">National Gallery Victoria (Melbourne)</h3>
+      <p>Established in 1861, the National Gallery of Victoria showcases over 70,000 works spanning diverse cultures and styles, blending history with contemporary art and using technology, like the NGV App, to enhance visitor experiences.</p>
+    </div>
+
+    <!-- City of Arts and Sciences -->
+    <div class="benchmark-item" style="margin-top: 1rem;">
+      <a href="#" class="project-image">
+        <%= image_tag 'projects/Valencia.jpg', alt: 'Valencia', class: 'image1' %>
+      </a>
+      <h3 class="roboto-bold" style="color: white; margin-top: 1rem;">City of Arts and Science Center (Valencia)</h3>
+      <p>The largest complex of its kind in Europe, the City of Arts and Sciences integrates futuristic architecture with science and creativity, featuring an aquarium, science museum, planetarium, IMAX cinema, arts center, and expansive parks to inspire both the mind and soul.</p>
+    </div>
+
   </div>
+
+  <!-- Additional content sections -->
+  <h2 class="roboto-regular" style="color: white;">User Research</h2>
+  <h2 class="roboto-regular" style="color: white;">Insights</h2>
+  <h2 class="roboto-regular" style="color: white;">Persona</h2>
+  <h2 class="roboto-regular" style="color: white;">How Might We</h2>
+  <h2 class="roboto-regular" style="color: white;">Lotus</h2>
+  <h2 class="roboto-regular" style="color: white;">Prototyping</h2>
+  <h1 class="roboto-regular" style="color: white;">Layout</h1>
+  <h1 class="roboto-regular" style="color: white;">Smartphone App</h1>
+  <h1 class="roboto-regular" style="color: white;">Website Community Hub</h1>
+  <h1 class="roboto-regular" style="color: white;">AR Helmet</h1>
+
+  <!-- Tech icons -->
+  <div class="tech-icons mt-5">
+    <%= image_tag 'projects/HTML5.svg', alt: 'HTML5', class: 'tech-icon' %>
+    <%= image_tag 'projects/CSS3.svg', alt: 'CSS3', class: 'tech-icon' %>
+    <%= image_tag 'projects/JavaScript.svg', alt: 'JavaScript', class: 'tech-icon' %>
+    <%= image_tag 'projects/RubyonRails.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
+    <%= image_tag 'projects/Ruby.svg', alt: 'Ruby', class: 'tech-icon' %>
+  </div>
+
+  <div class="tech-icons mt-3">
+    <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
+    <%= image_tag 'projects/Figma.svg', alt: 'Figma', class: 'tech-icon' %>
+    <%= image_tag 'projects/Bootstrap.svg', alt: 'Bootstrap', class: 'tech-icon' %>
+  </div>
+
+  <!-- Button group -->
+  <div class="btn-group mt-5">
+    <a class="btn btn-ghost roboto-regular" href="https://www.planstonight.lol/users/sign_in" target="_blank" rel="noopener noreferrer">Link to App</a>
+  </div>
+</div>
+
+<!-- Social partial -->
+<div>
+  <%= partial 'partials/social' %>
 </div>

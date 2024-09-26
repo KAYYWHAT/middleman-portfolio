@@ -171,7 +171,9 @@
 @media (max-width: 576px) {
   .banner {
     height: 34vh; /* Adjusted height for better visibility */
-    padding: 1re40
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
   }
 
   .title-main {

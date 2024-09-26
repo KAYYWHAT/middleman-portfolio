@@ -103,6 +103,7 @@
 @media (max-width: 1200px) {
   .banner {
     height: 30vh; /* Adjusted height for better visibility */
+    width: 100vw;
     padding: 3rem;
   }
 
@@ -128,6 +129,7 @@
 @media (max-width: 992px) {
   .banner {
     height: 30vh; /* Adjusted height for better visibility */
+    width: 100vw;
     padding: 3rem;
   }
 
@@ -152,6 +154,7 @@
 @media (max-width: 768px) {
   .banner {
     height: 40vh; /* Adjusted height for better visibility */
+    width: 100vw;
     padding: 1rem;
   }
 
@@ -170,7 +173,8 @@
 
 @media (max-width: 576px) {
   .banner {
-    height: 34vh; /* Adjusted height for better visibility */
+    height: 35vh;
+    width: 100vw;
     padding: 1rem;
     background-size: cover;
     background-position: center;

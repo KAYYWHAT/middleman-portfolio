@@ -6,7 +6,7 @@
   background-position: center;
   color: #031602;
   align-items: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   justify-content: center;
   padding: 3rem; /* Padding for better responsiveness */
   box-sizing: border-box; /* Center text horizontally */
@@ -173,7 +173,7 @@
 
 @media (max-width: 576px) {
   .banner {
-    height: 35vh;
+    height: 40vh;
     width: 100vw;
     padding: 1rem;
     background-size: cover;

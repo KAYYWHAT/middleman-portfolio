@@ -76,9 +76,32 @@
     font-size: 0.75rem; /* Smaller font size for very small screens */
   }
 }
+
 .main-container1 {
   background-color: #031602; // Black background
   margin: 0 auto;          // Center the container horizontally
   max-width: 1200px;       // Maximum width of the container
   box-sizing: border-box;  // Include padding in the width calculation
+}
+
+.image-group-container1 {
+  display: flex;
+  flex-direction: column; /* Arrange groups in rows */
+  gap: 2rem; /* Space between rows */
+}
+
+.project-image-group1 {
+  display: flex;
+  justify-content: space-between; /* Distribute space between images */
+  flex-wrap: wrap; /* Allow wrapping if screen gets smaller */
+  gap: 1rem; /* Space between images */
+}
+
+.project-image1 {
+  flex: 1 1 30%; /* Each image will take up approximately 30% of the container, adjust as needed */
+  max-width: 30%; /* Ensure the images don't stretch too much */
+}
+.project-image2 {
+  flex: 1 1 22%; /* Each image will take up approximately 30% of the container, adjust as needed */
+  max-width: 25%; /* Ensure the images don't stretch too much */
 }

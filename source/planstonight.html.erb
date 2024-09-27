@@ -1,45 +1,72 @@
 <div>
   <%= partial 'partials/navbar' %>
 </div>
-<div class="main-container">
-<div class="container my-5">
-<h1 class="roboto-bold" style="color: white;">PLANS TONIGHT </h1>
-<div class="card-show">
-<a href="#" class="project-image">
-  <%= image_tag 'projects/Plans-Tonight-Show-1.png', alt: 'PlansTonight', class: 'image' %>
-</a>
-<div style="margin-bottom: 2rem;">
-<h2 class="roboto-bold mt-5" style="color: white;">Features </h2>
-<ul>
-  <li class="roboto-regular" style="color: white;">Organize plans with a group of friends.</li>
-  <li class="roboto-regular" style="color: white;">Participate in a poll to get matched with the perfect bar that fits your vibe.</li>
-  <li class="roboto-regular" style="color: white;">Keep track of all your plans in one place.</li>
-</ul>
-</div>
-
-<div class="d-flex justify-content-between align-items-center image-group">
-<a href="#" class="project-image">
-  <%= image_tag 'projects/Plans-Tonight-Show.png', alt: 'PlansTonight', class: 'image' %>
-</a>
-</div>
-</div>
-          <div class="tech-icons mt-3">
-            <%= image_tag 'projects/HTML5.svg', alt: 'HTML5', class: 'tech-icon' %>
-            <%= image_tag 'projects/CSS3.svg', alt: 'CSS3', class: 'tech-icon' %>
-            <%= image_tag 'projects/JavaScript.svg', alt: 'JavaScript', class: 'tech-icon' %>
-            <%= image_tag 'projects/RubyonRails.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
-            <%= image_tag 'projects/Ruby.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
-            <%= image_tag 'projects/Figma.svg', alt: 'Figma', class: 'tech-icon' %>
-            <%= image_tag 'projects/Bootstrap.svg', alt: 'Bootstrap', class: 'tech-icon' %>
-            <%= image_tag 'projects/AdobeIllustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
-            <%= image_tag 'projects/AdobePhotoshop.svg', alt: 'AdobePhotoshop', class: 'tech-icon' %>
-            <%= image_tag 'projects/AdobePremierePro.svg', alt: 'AdobePremierePro', class: 'tech-icon' %>
-        </div>
-          <div class="btn-group mt-5">
-              <a class="btn btn-ghost roboto-regular" href="https://www.planstonight.lol/users/sign_in" target="_blank" rel="noopener noreferrer">Link to App</a>
+<div class="main-container1">
+  <div class="container my-5">
+    <%# <div class="card-show"> %>
+      <div class="image-group-container1">
+        <div class="project-image-group1">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Plans-Tonight-Show-1.png', alt: 'PlansTonight', class: 'image' %>
+              </a>
+              <a href="#" class="project-image">
+                <%= image_tag 'projects/Plans-Tonight-Show.png', alt: 'PlansTonight', class: 'image' %>
+              </a>
+            </div>
           </div>
-      </div>
 
+    <div style="margin-top: 2rem; margin-bottom: 2rem;">
+      <h2 class="roboto-bold" style="color: white;">Features </h2>
+      <ul>
+        <li class="roboto-regular" style="color: white;">Organize plans with a group of friends.</li>
+        <li class="roboto-regular" style="color: white;">Participate in a poll to get matched with the perfect bar that fits your vibe.</li>
+        <li class="roboto-regular" style="color: white;">Keep track of all your plans in one place.</li>
+      </ul>
+    </div>
+    <div class="image-group-container1">
+      <div class="project-image-group1">
+        <a href="#" class="project-image1">
+          <%= image_tag 'projects/Plans-Tonight-Home.png', alt: 'Solution', class: 'image' %>
+        </a>
+        <a href="#" class="project-image1">
+          <%= image_tag 'projects/Plans-Tonight-MakePlans2.png', alt: 'Solution', class: 'image' %>
+        </a>
+        <a href="#" class="project-image1">
+          <%= image_tag 'projects/Plans-Tonight-YourPlansTonight-fix.png', alt: 'Solution', class: 'image' %>
+        </a>
+      </div>
+    </div>
+    <div class="project-image-group1" style="margin-top: 2rem;">
+      <a href="#" class="project-image2">
+        <%= image_tag 'projects/Plans-Tonight-InviteFriends.png', alt: 'Solution', class: 'image' %>
+      </a>
+      <a href="#" class="project-image2">
+        <%= image_tag 'projects/Plans-Tonight-UpcomingPlans.png', alt: 'Solution', class: 'image' %>
+      </a>
+      <a href="#" class="project-image2">
+        <%= image_tag 'projects/Plans-Tonight-FinalResults.png', alt: 'Solution', class: 'image' %>
+      </a>
+      <a href="#" class="project-image2">
+        <%= image_tag 'projects/Plans-Tonight-404.png', alt: 'Solution', class: 'image' %>
+      </a>
+    </div>
+  </div>
+    <div class="tech-icons mt-3">
+      <%= image_tag 'projects/HTML5.svg', alt: 'HTML5', class: 'tech-icon' %>
+      <%= image_tag 'projects/CSS3.svg', alt: 'CSS3', class: 'tech-icon' %>
+      <%= image_tag 'projects/JavaScript.svg', alt: 'JavaScript', class: 'tech-icon' %>
+      <%= image_tag 'projects/RubyonRails.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
+      <%= image_tag 'projects/Ruby.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
+      <%= image_tag 'projects/Figma.svg', alt: 'Figma', class: 'tech-icon' %>
+      <%= image_tag 'projects/Bootstrap.svg', alt: 'Bootstrap', class: 'tech-icon' %>
+      <%= image_tag 'projects/AdobeIllustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
+      <%= image_tag 'projects/AdobePhotoshop.svg', alt: 'AdobePhotoshop', class: 'tech-icon' %>
+      <%= image_tag 'projects/AdobePremierePro.svg', alt: 'AdobePremierePro', class: 'tech-icon' %>
+    </div>
+    <div class="btn-group mt-5">
+        <a class="btn btn-ghost roboto-regular" href="https://www.planstonight.lol/users/sign_in" target="_blank" rel="noopener noreferrer">Link to App</a>
+    </div>
+  </div>
   <div>
     <%= partial 'partials/social' %>
   </div>

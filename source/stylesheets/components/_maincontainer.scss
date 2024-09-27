@@ -76,3 +76,9 @@
     font-size: 0.75rem; /* Smaller font size for very small screens */
   }
 }
+.main-container1 {
+  background-color: #031602; // Black background
+  margin: 0 auto;          // Center the container horizontally
+  max-width: 1200px;       // Maximum width of the container
+  box-sizing: border-box;  // Include padding in the width calculation
+}

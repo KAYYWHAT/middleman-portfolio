@@ -128,7 +128,7 @@
 
 @media (max-width: 992px) {
   .banner {
-    height: 30vh; /* Adjusted height for better visibility */
+    height: 40vh; /* Adjusted height for better visibility */
     width: 100vw;
     padding: 3rem;
   }
@@ -197,6 +197,16 @@
     object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
   }
 
+}
+
+@media (max-width: 350px) {
+  .banner {
+    height: 50vh;
+    width: 100vw;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .profile-photo {

@@ -68,9 +68,9 @@
 
 .tech-icons {
   display: flex;
-  gap: 0.5rem;
+  row-gap: 0.5rem;
   flex-wrap: wrap;
-  justify-content: center; /* Centers the icons */
+  justify-content: space-evenly; /* Centers the icons */
   margin-top: 1rem;
 }
 

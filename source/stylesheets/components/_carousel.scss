@@ -83,3 +83,14 @@ body {
     height: 30px;
   }
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Slight background to make the arrows visible */
+  border-radius: 50%; /* Rounded buttons */
+  padding: 10px; /* Makes the arrows larger */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust width for better positioning */
+}

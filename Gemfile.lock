@@ -86,7 +86,7 @@ GEM
     padrino-support (0.15.1)
     parallel (1.22.1)
     parslet (2.0.0)
-    popper_js (1.16.1)
+    popper_js (1.14.7)
     public_suffix (5.0.0)
     rack (2.2.4)
     rb-fsevent (0.11.2)
@@ -121,6 +121,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 3.0)
+  popper_js (~> 1.14.3)
   tzinfo-data
   wdm (~> 0.1)
 

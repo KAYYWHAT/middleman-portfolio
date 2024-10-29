@@ -60,10 +60,30 @@
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
 }
 
+// Ghost button styling
+.btn-ghost1 {
+  color: black;
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border-radius: 50px;
+  background-color: transparent; /* Default background */
+  font-size: 16px; /* Ensure consistent font size */
+  font-weight: lighter;
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
 .btn-ghost:hover {
   background-color: #333; /* Darker background color on hover */
   border-color: #ccc; /* Lighter border color on hover */
   color: #ebebeb; /* Maintain text color */
+}
+
+.btn-ghost1:hover {
+  background-color: white; /* Darker background color on hover */
+  border-color: #ccc; /* Lighter border color on hover */
+  color: black; /* Maintain text color */
 }
 
 .tech-icons {

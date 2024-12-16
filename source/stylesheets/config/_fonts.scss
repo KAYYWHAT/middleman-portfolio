@@ -1,16 +1,163 @@
-// Import Google fonts
+// Import Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Quicksand", "Helvetica", "sans-serif";
 
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+// Base font settings for body text
+body {
+  font-family: $body-font;
+  color: #031602; // Text color
+}
+
+// Base font settings for headers
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headers-font;
+  color: #031602; // Header color
+}
+
+// Regular Roboto styles
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; // Normal weight
+  font-style: normal;
+  color: #031602; // Text color
+}
+
+
+// Bold Roboto styles
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; // Bold weight
+  font-style: normal;
+  color: #031602; // Text color
+}
+
+// Regular Roboto styles with italic
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; // Normal weight
+  font-style: italic;
+  color: #031602; // Text color
+}
+
+// Font sizes for paragraphs and headers
+.roboto-regular p {
+  font-size: 1.125rem; // Adjust size as needed (20px equivalent)
+}
+
+
+.roboto-regular h1 {
+  font-size: 2.5rem; // Adjust size as needed (50px equivalent)
+}
+
+// Responsive adjustments for mobile
+@media (max-width: 768px) {
+  .roboto-regular p {
+    font-size: 1.1rem; // Smaller font size for mobile
+  }
+
+  .roboto-regular h1 {
+    font-size: 1.75rem; // Smaller font size for mobile
+  }
+}
+
+@media (max-width: 576px) {
+  .roboto-regular p {
+  font-size: 0.75rem; /* Larger font size for smaller screens */
+  }
+}
+
+
+// Regular Roboto styles
+.roboto-regular1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; // Normal weight
+  font-style: normal;
+  color: #031602;
+  font-size: 21px; // Text color
+}
+
+// Bold Roboto styles
+.roboto-bold1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; // Bold weight
+  font-style: normal;
+  color: #031602; // Text color
+  font-size: 100px; // Text color
+}
+
+// Regular Roboto styles with italic
+.roboto-regular-italic1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; // Normal weight
+  font-style: italic;
+  color: #031602; // Text color
+}
+
+// Font sizes for paragraphs and headers with default size
+.roboto-regular1 p {
+  font-size: 14px; // Adjust size as needed (18px equivalent)
+}
+
+.roboto-regular1 h1 {
+  font-size: 6rem; // Adjust size as needed (96px equivalent for larger screens)
+}
+
+// Responsive adjustments for tablets and smaller devices
+@media (max-width: 1024px) {
+  .roboto-regular1 p {
+    font-size: 1rem; // Slightly smaller font size for tablets
+  }
+
+  .roboto-bold1 {
+    font-size: 80px; // Smallest font size for very small devices
+  }
+
+  .roboto-regular1 h1 {
+    font-size: 4rem; // Smaller font size for tablets
+  }
+}
+
+@media (max-width: 768px) {
+  .roboto-regular1 {
+    font-size: 0.9rem; // Further reduction for smaller tablets
+  }
+
+  .roboto-bold1 {
+    font-size: 80px; // Smallest font size for very small devices
+  }
+
+  .roboto-regular1 h1 {
+    font-size: 2.5rem; // Adjust header size for smaller tablets
+  }
+}
+
+@media (max-width: 576px) {
+  .roboto-regular1 {
+    font-size: 0.8rem; // Smaller font size for mobile phones
+  }
+
+  .roboto-bold1 {
+    font-size: 80px; // Smallest font size for very small devices
+  }
+
+  .roboto-regular1 h1 {
+    font-size: 1.75rem; // Further reduction for mobile phones
+  }
+}
+
+@media (max-width: 375px) {
+  .roboto-regular1 {
+    font-size: 12px; // Smallest font size for very small devices
+  }
+
+  .roboto-bold1 {
+    font-size: 65px; // Smallest font size for very small devices
+  }
+
+  .roboto-regular1 h1 {
+    font-size: 7px; // Smallest header size for mobile phones
+  }
+}

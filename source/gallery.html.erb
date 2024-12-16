@@ -1,0 +1,39 @@
+<div>
+  <%= partial 'partials/navbar' %>
+</div>
+<div class="main-container">
+    <div class="text-container" style="margin-top: 2rem; margin-bottom: 2rem;">
+      <h1 class="title-main roboto-bold" style="color: white;"><strong>Design Gallery</strong></h1>
+    </div>
+<div class="d-flex justify-content-between align-items-center image-group">
+<a href="#" class="project-image">
+  <%= image_tag 'projects/Mock01.png', alt: 'TheaMag', class: 'image' %>
+</a>
+<a href="#" class="project-image">
+  <%= image_tag 'projects/Mock02.png', alt: 'TheaMag', class: 'image' %>
+</a>
+</div>
+</div>
+<div class="d-flex justify-content-between align-items-center image-group" style="padding-top: 1rem;">
+  <a href="#" class="project-image">
+    <%= image_tag 'projects/goon1.png', alt: 'GOON', class: 'image' %>
+  </a>
+  <a href="#" class="project-image">
+    <%= image_tag 'projects/goon2.png', alt: 'GOON', class: 'image' %>
+  </a>
+</div>
+
+
+</div>
+        <div class="tech-icons">
+        <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
+        <%= image_tag 'projects/Adobe Photoshop.svg', alt: 'Photoshop', class: 'tech-icon' %>
+        <%= image_tag 'projects/Adobe Premiere Pro.svg', alt: 'PremierePro', class: 'tech-icon' %>
+    </div>
+
+</div>
+</div>
+  <div>
+    <%= partial 'partials/social' %>
+  </div>
+</div>

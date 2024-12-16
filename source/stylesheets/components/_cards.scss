@@ -1,108 +1,199 @@
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line if there’s not enough space */
+  gap: 2rem; /* Space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  margin: 0 auto; /* Centers the container itself */
+  max-width: 1200px; /* Adjust max width as needed */
+  padding: 1rem; /* Padding around the container */
+  box-sizing: border-box;
 }
 
+/* Individual card styling */
+.card-products {
+  display: flex;
+  flex-direction: column; /* Ensures cards stack vertically */
+  gap: 2rem; /* Space between cards */
+  width: 100%;
+}
+
+/* Card product styling */
 .card-product {
-  overflow: hidden;
-  height: 280px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #6C757D; /* Background color of card */
+  max-width: 100%; /* Ensure card does not exceed container width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
+  overflow: hidden;
 }
 
-.card-product img {
-  height: 184px;
+.card-show {
+  max-width: 100%; /* Ensure card does not exceed container width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Hover effect for card */
+.card-product:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Styling for images */
+.project-image {
+  display: block;
   width: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
-.card-product h2 {
-  font-size: 16px;
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+}
+
+.image1 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+}
+
+.image-group a {
+  margin-right: 15px; /* Adjust as necessary */
+}
+
+.image-group a:last-child {
+  margin-right: 0; /* Remove margin from the last image */
+}
+
+
+/* Information inside the card */
+.card-trip-infos {
+  padding: 1.5rem; /* Padding around the text */
+  overflow: visible;
+}
+
+.card-trip-infos h1 {
+  margin: 0 0 8px;
+  font-size: 3rem; /* Font size adjusted for better readability */
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  margin: 0;
 }
 
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-.card-product .card-product-infos {
-  padding: 16px;
-  position: relative;
-  &:hover {
-    .external-link {
-      opacity: 1;
-    }
-  }
-}
-
-.card-links {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
-
-.external-link {
-  opacity: 0;
-  color: $gray;
-  transition: opacity 1s;
+.text-black {
   text-decoration: none;
-  font-size: 20px;
-  &:hover {
-    cursor: pointer;
-    color: $gray
-  }
 }
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-  .external-link {
-    opacity: 1;
-  }
+.card-trip-infos h3 {
+  font-size: 1.8rem; /* Font size adjusted for better readability */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-  .external-link {
-    opacity: 1;
-  }
+.card-trip-infos p {
+  margin: 0;
+  font-size: 1.2rem; /* Font size adjusted for better readability */
+  font-family: 'Roboto', sans-serif;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
+/* Optional: Add some global reset styles to avoid default browser styles interfering */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .card-trip-infos h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
   }
-  .external-link {
-    opacity: 0;
+
+  .card-trip-infos h3 {
+    font-size: 1.3rem; /* Smaller font size for mobile */
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
   }
+
+  .card-trip-infos p {
+    font-size: 1rem; /* Smaller font size for mobile */
+    font-family: 'Roboto', sans-serif;
+  }
+
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
+.link-container {
+  background-color: #ADFF2F;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
+.contact-link {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  transition: font-weight 0.3s, color 0.3s;
+}
+
+.contact-link:hover {
+  font-weight: bold;
+  color: black;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 1.5rem 0; /* Optional spacing */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-responsive {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.textflex {
+  display: flex; /* This makes the container a flexbox */
+  align-items: flex-start; /* Align items at the start along the cross axis */
+  gap: 20px; /* Optional: Adds some space between the image and the text */
+}
+
+.textflex div {
+  flex: 1; /* Each div takes up an equal amount of space */
+}
+
+.project-image {
+  max-width: 100%; /* Make sure the image does not exceed its container */
+  max-height: 100%; /* Optional: Control the height of the image */
+}
+
+.image {
+  width: 100%; /* The image will fill the width of its parent div */
+  height: auto; /* Maintain the aspect ratio of the image */
 }

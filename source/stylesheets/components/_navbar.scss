@@ -1,12 +1,111 @@
+/* Navbar container styles */
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center; /* Vertically center items */
+  padding: 20px;
+  background: #031602;
 }
 
+/* Centered content styling */
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Adjusted to a more typical spacing value for responsiveness */
+}
+
+/* Link styling */
+.nav-link {
+  color: white;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Remove the default styling for visited links */
+.nav-link:visited {
+  color: white; /* Ensure visited links have the same color as unvisited links */
+}
+
+/* Change color on hover */
+.nav-link:hover {
+  color: greenyellow; /* Hover color */
+}
+
+/* Ensure focus state styling is consistent */
+.nav-link:focus {
+  color: white; /* Maintain the same color as the default state */
+  outline: none; /* Remove default outline if needed */
+}
+
+
+/* Navbar toggler button */
+.navbar-toggler {
+  background: transparent;
+  border: none; /* Remove border */
+}
+
+/* Change background color on hover and focus */
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background-color: #031602; /* Match the hover effect color */
+}
+
+/* Customize the toggler icon color */
+.navbar-toggler-icon {
+  background-image: none; /* Remove default icon */
+}
+
+.navbar-toggler::before {
+  content: '\f0c9'; /* FontAwesome icon code for bars */
+  font-family: 'Font Awesome 5 Free'; /* Ensure FontAwesome is used */
+  font-weight: 900; /* Adjust for solid icons */
+  color: greenyellow; /* Match the hover effect color */
+  font-size: 1.5rem; /* Adjust size as needed */
+}
+
+/* Adjustments for collapse behavior */
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
+/* Navbar brand image */
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 40px; /* Fixed size for the brand logo */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    gap: 10px; /* Smaller gap on small screens */
+  }
+
+  .navbar-center {
+    display: none; /* Hide centered content on small screens if necessary */
+  }
+
+  .navbar-toggler {
+    display: block; /* Ensure toggler button is visible */
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 576px) {
+  .navbar-lewagon {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+
+  .navbar-brand img {
+    width: 30px; /* Smaller brand logo on very small screens */
+  }
+
+  .navbar-links {
+    gap: 5px; /* Smaller gap for very small screens */
+  }
 }

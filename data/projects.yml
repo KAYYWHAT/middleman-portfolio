@@ -1,32 +1,32 @@
-- name: Longest Word Game
+- name: PlansTonight
+  description: Plans Tonight was the final project for Le Wagon Tokyo's 9-week intensive coding bootcamp. This app is designed to reduce the headache of choosing a date and time, invite friends to vote for the mood, and alcohol type they prefer. Based on these choices, the app will decide a Bar for you!
+  image: projects/Plans-Tonight-Show-1.png
+  url: https://www.planstonight.lol
+  github: https://github.com/KAYYWHAT/plans_tonight
+  online: true
+
+- name: Kollab
+  description: Decent description of the app
+  image: projects/placeholder.png
+  url: https://kollabart-5a9192f4e8a9.herokuapp.com/
+  github: https://www.github.com
+  online: true
+
+- name: Digital L/P Plates
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   github: https://www.github.com
   online: true
 
-- name: Movie Watchlist
+- name: Alterphorm
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com
   github: https://www.github.com
   online: true
 
-- name: Airbnb
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
-  online: true
-
-- name: Final project
-  description: Decent description of the app
-  image: projects/placeholder.png
-  url: https://www.google.com
-  github: https://www.github.com
-  online: true
-
-- name: Yelp
+- name: THEA Magazine
   description: Decent description of the app
   image: projects/placeholder.png
   url: https://www.google.com

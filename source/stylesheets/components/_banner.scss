@@ -1,3 +1,222 @@
 .banner {
-  height: 100vh;
+  width: 100vw;
+  height: 60vh;
+  background-image: image-url('projects/bannerimage.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #031602;
+  align-items: center;
+  background-attachment: scroll;
+  justify-content: center;
+  padding: 3rem; /* Padding for better responsiveness */
+  box-sizing: border-box; /* Center text horizontally */
+}
+
+.banner2 {
+  width: 100vw;
+  height: 60vh;
+  background-image: image-url('projects/SUPL.jpeg');
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  background-attachment: fixed;
+  justify-content: center;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.banner-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .banner2 {
+    height: 40vh;
+    padding: 2rem;
+  }
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center; /* Center vertically within the banner */
+  gap: 1rem;
+  max-width: 90%;
+  width: 100%;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  gap: 16px; /* Space between buttons */
+  margin-top: 1rem; /* Space above the button container */
+}
+
+.title-main, .subtitle {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.title-main {
+  font-size: 5vw; /* Responsive font size */
+}
+
+.subtitle {
+  font-size: 3vw; /* Responsive font size */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center social icons horizontally */
+  margin-top: 2rem; /* Space between text and social icons */
+}
+
+.button-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0.5rem; /* Space between social buttons */
+}
+
+@media (max-width: 1920px) {
+  .imagekollab {
+    width: 50%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+  }
+}
+@media (max-width: 1200px) {
+  .banner {
+    height: 60vh; /* Adjusted height for better visibility */
+    width: 100vw;
+    padding: 3rem;
+  }
+
+  .title-main {
+    font-size: 5vw;
+  }
+
+  .subtitle {
+    font-size: 4vw;
+  }
+
+  .banner-content {
+    gap: 0.5rem;
+  }
+
+  .imagekollab {
+    width: 25%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
+    height: 40vh; /* Adjusted height for better visibility */
+    width: 100vw;
+    padding: 3rem;
+  }
+
+  .title-main {
+    font-size: 5vw;
+  }
+
+  .subtitle {
+    font-size: 4vw;
+  }
+
+  .banner-content {
+    gap: 0.5rem;
+  }
+  .imagekollab {
+    width: 50%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh; /* Adjusted height for better visibility */
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .title-main {
+    font-size: 5vw;
+  }
+
+  .subtitle {
+    font-size: 4vw;
+  }
+
+  .banner-content {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    height: 35vh;
+    width: 100vw;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title-main {
+    font-size: 6vw;
+  }
+
+  .subtitle {
+    font-size: 5vw;
+  }
+
+  .banner-content {
+    gap: 0.5rem;
+  }
+  .imagekollab {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
+  }
+
+}
+
+@media (max-width: 350px) {
+  .banner {
+    width: 100vw;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  text-align: left; /* Align text within the container */
 }

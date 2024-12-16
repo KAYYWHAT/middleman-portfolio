@@ -1,10 +1,66 @@
-<div class="container ">
-  <!-- Banner Section -->
-  <%= partial 'partials/banner' %>
-  <!-- About Section -->
-  <%= partial 'partials/about' %>
-  <!-- Projects Section -->
-  <%= partial 'partials/projects' %>
-  <!-- Social Links Section -->
-  <%= partial 'partials/social' %>
+<div>
+  <%= partial 'partials/navbar' %>
 </div>
+<div>
+  <%= partial 'partials/banner' %>
+</div>
+
+<div class="container my-5">
+    <div class="card-container" style="margin-top: 1rem;">
+      <div class="card-products">
+
+      <div class="card-product">
+        <a href="#" class="project-image">
+          <%= image_tag 'projects/Plans-Tonight-Show-1.png', alt: 'Plans Tonight', class: 'image' %>
+        </a>
+              <div class="link-container">
+      <%= link_to "See More", "/planstonight.html", class: "contact-link" %>
+    </div>
+      </div>
+
+<!-- Repeat for other cards with appropriate links -->
+
+<div class="card-product">
+  <a href="#" class="project-image">
+    <%= image_tag 'projects/Kollab-Show-1.png', alt: 'Kollab', class: 'image' %>
+  </a>
+    <div class="link-container">
+      <%= link_to "See More", "/kollab.html", class: "contact-link" %>
+    </div>
+      </div>
+
+      <div class="card-product">
+        <a href="#" class="project-image">
+          <%= image_tag 'projects/SUPL.jpg', alt: 'SUPL', class: 'image' %>
+        </a>
+      <div class="link-container">
+        <%= link_to "See More", "/supldarkmatter.html", class: "contact-link" %>
+      </div>
+    </div>
+
+            <div class="card-product">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Alterphorm-Logo.png', alt: 'Alterphorm', class: 'image' %>
+          </a>
+              <div class="link-container">
+                <%= link_to "See More", "/alterphorm.html", class: "contact-link" %>
+              </div>
+      </div>
+
+                  <div class="card-product">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/GALLERY.png', alt: 'Gallery', class: 'image' %>
+          </a>
+              <div class="link-container">
+                <%= link_to "See More", "/gallery.html", class: "contact-link" %>
+              </div>
+      </div>
+
+  </div>
+    <div>
+    <%= partial 'partials/contactme' %>
+  </div>
+
+  <div>
+    <%= partial 'partials/social' %>
+  </div>

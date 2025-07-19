@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center; /* Vertically center items */
   padding: 20px;
-  background: #031602;
+  background: white;
 }
 
 /* Centered content styling */
@@ -22,14 +22,14 @@
 
 /* Link styling */
 .nav-link {
-  color: white;
+  color: black;
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease; /* Smooth transition effect */
 }
 
 /* Remove the default styling for visited links */
 .nav-link:visited {
-  color: white; /* Ensure visited links have the same color as unvisited links */
+  color: black; /* Ensure visited links have the same color as unvisited links */
 }
 
 /* Change color on hover */
@@ -53,7 +53,7 @@
 /* Change background color on hover and focus */
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-  background-color: #031602; /* Match the hover effect color */
+  background-color: white; /* Match the hover effect color */
 }
 
 /* Customize the toggler icon color */

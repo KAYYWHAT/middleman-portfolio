@@ -1,12 +1,13 @@
+<body style="background-color: black;">
 <div>
   <%= partial 'partials/navbar' %>
 </div>
 <!-- Image with text and logo overlay -->
-<div class="image-container" style="position: relative; max-height: 550px; overflow: hidden; align-items: center; background-size: cover; background-position: center; object-fit: cover;">
+<div class="image-container" style="background-color: black; position: relative; max-height: 550px; overflow: hidden; align-items: center; background-size: cover; background-position: center; object-fit: cover;">
   <!-- Main Image with reduced height -->
   <%= image_tag 'projects/Stawell.jpeg', alt: 'SUPL', class: 'image', style: 'width: 100%; height: 650px; object-fit: cover;' %>
   <!-- Text overlay on the top-left with padding -->
-  <div class="overlay-content" style="position: absolute; top: 2.5%; left: 5%; color: white; text-align: left;">
+  <div class="overlay-content" style="position: absolute; top: 2.5%; left: 5%; color: black; text-align: left;">
     <h1 class="roboto-bold1" style="color: white; margin-bottom: 0rem;">SUPL</h1>
     <p class="roboto-regular1" style="color: white; margin-bottom: 0rem;">Seeks to <strong>unravel the mystery</strong> of <strong>Dark Matter</strong> using a <strong>state-of-the-art underground lab</strong> 1km below Stawell, Victoria.</p>
     <p class="roboto-regular1" style="color: white; margin-bottom: 0rem;">Designed to <strong>minimize cosmic interference</strong> and <strong>join the global search</strong> for this elusive particle,</p>
@@ -21,7 +22,7 @@
   </div>
 </div>
 
-<div class="main-container1">
+<div class="main-container1" style="background-color: black;">
   <div class="container my-5">
 <!-- Bootstrap Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">

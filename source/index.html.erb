@@ -1,64 +1,49 @@
 <div>
   <%= partial 'partials/navbar' %>
 </div>
-<div>
-  <%= partial 'partials/banner' %>
-</div>
 
-<div class="container my-5">
-  <div class="card-container" style="margin-top: 1rem;">
-    <div class="card-products">
+<div style="padding: 16px;">
+  <div>
+    <%= partial 'partials/banner' %>
+  </div>
 
-      <!-- FIRST CARD -->
-      <div class="card-product">
-        <a href="/planstonight/" class="project-image">
-          <%= image_tag 'projects/WebCoverPlan.png', alt: 'Plans Tonight', class: 'image' %>
-        </a>
-      </div>
+  <section style="padding: 3rem 0; max-width: 1200px; margin: 0 auto;">
+    <h2 style="text-align: center; margin-bottom: 1rem; font-weight: 700; font-size: 2rem; color: #222;">Selected Projects</h2>
+    <p style="text-align: center; margin-bottom: 3rem; color: #555; font-size: 1.125rem;">
+      A collection of design and creative work across web, branding, and experimental formats.
+    </p>
 
-      <!-- WPU CARD -->
-      <div class="card-product">
-        <a href="/wpu/" class="project-image">
-          <%= image_tag 'projects/WPUWebCover.png', alt: 'WPU', class: 'image' %>
-        </a>
-      </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
 
-      <!-- KOLLAB CARD -->
-      <div class="card-product">
-        <a href="/kollab/" class="project-image">
-          <%= image_tag 'projects/kollabWebCover.png', alt: 'Kollab', class: 'image' %>
-        </a>
-      </div>
+      <% projects = [
+        { path: "/planstonight/", image: 'projects/WebCoverPlan.png', alt: 'Plans Tonight' },
+        { path: "/wpu/", image: 'projects/WPUWebCover.png', alt: 'WPU' },
+        { path: "/kollab/", image: 'projects/kollabWebCover.png', alt: 'Kollab' },
+        { path: "/supldarkmatter/", image: 'projects/SuplLogo.png', alt: 'SUPL' },
+        { path: "/alterphorm/", image: 'projects/Alterphorm-Logo.png', alt: 'Alterphorm' },
+        { path: "/gallery/", image: 'projects/GALLERY.png', alt: 'Gallery' }
+      ] %>
 
-      <!-- SUPL CARD -->
-      <div class="card-product">
-        <a href="/supldarkmatter/" class="project-image">
-          <%= image_tag 'projects/SUPL.jpg', alt: 'SUPL', class: 'image' %>
-        </a>
-      </div>
-
-      <!-- ALTERPHORM CARD -->
-      <div class="card-product">
-        <a href="/alterphorm/" class="project-image">
-          <%= image_tag 'projects/Alterphorm-Logo.png', alt: 'Alterphorm', class: 'image' %>
-        </a>
-      </div>
-
-      <!-- GALLERY CARD -->
-      <div class="card-product">
-        <a href="/gallery/" class="project-image">
-          <%= image_tag 'projects/GALLERY.png', alt: 'Gallery', class: 'image' %>
-        </a>
-      </div>
+      <% projects.each do |project| %>
+        <div style="max-width: 300px; flex: 1 1 280px; text-align: center; transition: transform 0.2s ease; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); cursor: pointer;"
+             onmouseover="this.style.transform='scale(1.03)';" onmouseout="this.style.transform='scale(1)';">
+          <a href="<%= project[:path] %>" style="display: block; text-decoration: none; color: inherit;">
+            <%= image_tag project[:image], alt: project[:alt], style: "width: 100%; height: auto; border-radius: 12px;" %>
+            <p style="margin-top: 0.75rem; font-weight: 600; font-size: 1.1rem; color: #222;">
+              <%= project[:alt] %>
+            </p>
+          </a>
+        </div>
+      <% end %>
 
     </div>
+  </section>
+
+  <div>
+    <%= partial 'partials/contactme' %>
   </div>
-</div>
 
-<div>
-  <%= partial 'partials/contactme' %>
-</div>
-
-<div>
-  <%= partial 'partials/social' %>
+  <div>
+    <%= partial 'partials/social' %>
+  </div>
 </div>

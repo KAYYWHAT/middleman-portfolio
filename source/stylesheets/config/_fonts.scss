@@ -1,163 +1,116 @@
 // Import Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
 
-// Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Quicksand", "Helvetica", "sans-serif";
+// Define fonts
+$body-font: "Inconsolata", monospace;
+$headers-font: "Quicksand", "Helvetica", sans-serif;
 
 // Base font settings for body text
 body {
   font-family: $body-font;
-  color: #031602; // Text color
+  color: #031602;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 // Base font settings for headers
 h1, h2, h3, h4, h5, h6 {
   font-family: $headers-font;
-  color: #031602; // Header color
-}
-
-// Regular Roboto styles
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; // Normal weight
-  font-style: normal;
-  color: #031602; // Text color
-}
-
-
-// Bold Roboto styles
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700; // Bold weight
-  font-style: normal;
-  color: #031602; // Text color
-}
-
-// Regular Roboto styles with italic
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; // Normal weight
-  font-style: italic;
-  color: #031602; // Text color
-}
-
-// Font sizes for paragraphs and headers
-.roboto-regular p {
-  font-size: 1.125rem; // Adjust size as needed (20px equivalent)
-}
-
-
-.roboto-regular h1 {
-  font-size: 2.5rem; // Adjust size as needed (50px equivalent)
-}
-
-// Responsive adjustments for mobile
-@media (max-width: 768px) {
-  .roboto-regular p {
-    font-size: 1.1rem; // Smaller font size for mobile
-  }
-
-  .roboto-regular h1 {
-    font-size: 1.75rem; // Smaller font size for mobile
-  }
-}
-
-@media (max-width: 576px) {
-  .roboto-regular p {
-  font-size: 0.75rem; /* Larger font size for smaller screens */
-  }
-}
-
-
-// Regular Roboto styles
-.roboto-regular1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; // Normal weight
-  font-style: normal;
   color: #031602;
-  font-size: 21px; // Text color
 }
 
-// Bold Roboto styles
-.roboto-bold1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700; // Bold weight
+// Inconsolata base classes
+.inconsolata-regular {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
   font-style: normal;
-  color: #031602; // Text color
-  font-size: 100px; // Text color
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: #031602;
 }
 
-// Regular Roboto styles with italic
-.roboto-regular-italic1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; // Normal weight
+.inconsolata-bold {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: #031602;
+}
+
+.inconsolata-italic {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
   font-style: italic;
-  color: #031602; // Text color
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: #031602;
 }
 
-// Font sizes for paragraphs and headers with default size
-.roboto-regular1 p {
-  font-size: 14px; // Adjust size as needed (18px equivalent)
+// Font sizes for content
+.inconsolata-regular p {
+  font-size: 1.125rem;
 }
 
-.roboto-regular1 h1 {
-  font-size: 6rem; // Adjust size as needed (96px equivalent for larger screens)
+.inconsolata-regular h1 {
+  font-size: 2.5rem;
 }
 
-// Responsive adjustments for tablets and smaller devices
+// Responsive adjustments
 @media (max-width: 1024px) {
-  .roboto-regular1 p {
-    font-size: 1rem; // Slightly smaller font size for tablets
+  .inconsolata-regular p {
+    font-size: 1rem;
   }
 
-  .roboto-bold1 {
-    font-size: 80px; // Smallest font size for very small devices
+  .inconsolata-bold {
+    font-size: 4rem;
   }
 
-  .roboto-regular1 h1 {
-    font-size: 4rem; // Smaller font size for tablets
+  .inconsolata-regular h1 {
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 768px) {
-  .roboto-regular1 {
-    font-size: 0.9rem; // Further reduction for smaller tablets
+  .inconsolata-regular {
+    font-size: 0.9rem;
   }
 
-  .roboto-bold1 {
-    font-size: 80px; // Smallest font size for very small devices
+  .inconsolata-bold {
+    font-size: 3rem;
   }
 
-  .roboto-regular1 h1 {
-    font-size: 2.5rem; // Adjust header size for smaller tablets
+  .inconsolata-regular h1 {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .roboto-regular1 {
-    font-size: 0.8rem; // Smaller font size for mobile phones
+  .inconsolata-regular {
+    font-size: 0.8rem;
   }
 
-  .roboto-bold1 {
-    font-size: 80px; // Smallest font size for very small devices
+  .inconsolata-bold {
+    font-size: 2.5rem;
   }
 
-  .roboto-regular1 h1 {
-    font-size: 1.75rem; // Further reduction for mobile phones
+  .inconsolata-regular h1 {
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 375px) {
-  .roboto-regular1 {
-    font-size: 12px; // Smallest font size for very small devices
+  .inconsolata-regular {
+    font-size: 0.75rem;
   }
 
-  .roboto-bold1 {
-    font-size: 65px; // Smallest font size for very small devices
+  .inconsolata-bold {
+    font-size: 2rem;
   }
 
-  .roboto-regular1 h1 {
-    font-size: 7px; // Smallest header size for mobile phones
+  .inconsolata-regular h1 {
+    font-size: 1.25rem;
   }
 }

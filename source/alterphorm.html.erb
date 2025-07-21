@@ -1,45 +1,60 @@
 <div>
   <%= partial 'partials/navbar' %>
 </div>
-<!-- Main Container -->
-  <div class="container my-5">
-    <div class="card-products">
-      <div class="video-responsive">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/Ab6wLRUVB2s?si=Q3z_bcOfuG8kukPC"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-        </iframe>
-      </div>
-        <div class="banner-content2">
-          <div class="roboto-regular" style="color: black; margin-top: 2rem;">
-          <h2 class="roboto-regular" style="color: black;">ALTERPHORM</h2>
-          <p>is a project inspired by certain influences that are exposed to the youth throughout life growing up in specifically but not limited to Melbourne, Australia. That is, if the youth choose to follow this path on their own will. Many are influenced by external factors and other distractions of life that seem to guide them in the right direction in society's eyes, but constantly seeking adrenaline and perfection in detail keeps these influences relevant in our lives. Searching for second hand clothes that ultimately curate our own style, continuously trying the same trick at the skatepark until pushing yourself to physical incapability, trying to get that perfect shot on your favourite film camera without wasting film, focusing so hard to not mess up a painting, and even simply going out with friends to a gritty unlisted event in the middle of nowhere. These situations are what ALTERPHORM grew from and the people who have spent hours experiencing this type of life all have a mutual understanding of one another to some degree. Our creative endeavours are how we build our own characteristics that bring us to our ALTERPHORM of thinking, that is if it is for the better or worse of our own mental wellbeing.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Images in Flexbox -->
-        <div class="card-show" style="margin-top: 2rem;">
-          <a href="#" class="project-image">
-            <%= image_tag 'projects/TShirtMockup.png', alt: 'First Image', class: 'image' %>
-          </a>
-              <a href="#" class="project-image">
-            <%= image_tag 'projects/TShirtMockup2.png', alt: 'First Image', class: 'image' %>
-          </a>
-        </div>
-      <!-- Technology Icons -->
-      <div class="card-trip-infos">
-        <div class="tech-icons">
-          <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
-          <%= image_tag 'projects/AdobePhotoshop.svg', alt: 'Figma', class: 'tech-icon' %>
-          <%= image_tag 'projects/AdobePremierePro.svg', alt: 'Bootstrap', class: 'tech-icon' %>
-        </div>
-      </div>
-<!-- Social Partial -->
-<div>
-  <%= partial 'partials/social' %>
+<div class="container my-5 px-3 px-md-4">
+  <div class="card-products">
+
+    <!-- Responsive YouTube Video -->
+<!-- Video Embed (Responsive 16:9) -->
+<!-- Responsive YouTube Embed -->
+<div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9; margin: 0 auto 1rem auto;">
+  <iframe
+    src="https://www.youtube.com/embed/Ab6wLRUVB2s?si=Q3z_bcOfuG8kukPC"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    style="width: 100%; height: 100%; border: none;">
+  </iframe>
 </div>
+
+
+
+    <!-- Banner and Text -->
+    <div class="banner-content2">
+      <div style="color: black;">
+        <div class="d-flex justify-content-center mb-4">
+          <%= image_tag 'projects/AP_LogoLabel.png', alt: 'ALTERPHORM', class: 'img-fluid', style: 'max-width: 100%; height: auto;' %>
+        </div>
+        <h2 class="subtitle roboto-regular" style="color: black; font-size: 1.1rem; line-height: 1.6;">
+          <strong>ALTERPHORM</strong>  is a project inspired by certain influences that are exposed to the youth throughout life growing up in specifically but not limited to Melbourne, Australia. That is, if the youth choose to follow this path on their own will. Many are influenced by external factors and other distractions of life that seem to guide them in the right direction in society's eyes, but constantly seeking adrenaline and perfection in detail keeps these influences relevant in our lives. Searching for second hand clothes that ultimately curate our own style, continuously trying the same trick at the skatepark until pushing yourself to physical incapability, trying to get that perfect shot on your favourite film camera without wasting film, focusing so hard to not mess up a painting, and even simply going out with friends to a gritty unlisted event in the middle of nowhere. These situations are what ALTERPHORM grew from and the people who have spent hours experiencing this type of life all have a mutual understanding of one another to some degree. Our creative endeavours are how we build our own characteristics that bring us to our ALTERPHORM of thinking, that is if it is for the better or worse of our own mental wellbeing.
+        </h2>
+      </div>
+    </div>
+
+    <!-- Images in Flexbox -->
+    <div class="card-show d-flex flex-wrap justify-content-center mt-4 gap-3">
+      <a href="#" class="project-image">
+        <%= image_tag 'projects/TShirtMockup.png', alt: 'T-Shirt Mockup 1', class: 'img-fluid', style: 'max-width: 100%; height: auto;' %>
+      </a>
+      <a href="#" class="project-image">
+        <%= image_tag 'projects/TShirtMockup2.png', alt: 'T-Shirt Mockup 2', class: 'img-fluid', style: 'max-width: 100%; height: auto;' %>
+      </a>
+    </div>
+
+    <!-- Technology Icons -->
+    <div class="card-trip-infos mt-4">
+      <div class="tech-icons d-flex justify-content-center gap-3 flex-wrap">
+        <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon', style: 'height: 40px;' %>
+        <%= image_tag 'projects/AdobePhotoshop.svg', alt: 'Photoshop', class: 'tech-icon', style: 'height: 40px;' %>
+        <%= image_tag 'projects/AdobePremierePro.svg', alt: 'Premiere Pro', class: 'tech-icon', style: 'height: 40px;' %>
+      </div>
+    </div>
+
+
+
+  </div>
+    <div>
+    <%= partial 'partials/contactme' %>
+  </div>
 </div>

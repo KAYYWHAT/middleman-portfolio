@@ -2,48 +2,68 @@
   <%= partial 'partials/navbar' %>
 </div>
 
-<div style="padding: 16px;">
-  <div>
-    <%= partial 'partials/banner' %>
+<!-- Banner Section Container -->
+<section class="banner-section"
+         style="
+           width: 100%;
+           padding: 4rem 5vw; /* vertical and horizontal padding */
+           background-color: #fff; /* optional, you can remove if transparent */
+           box-sizing: border-box;
+           ">
+  <div style="
+      max-width: 900px; /* limits line length */
+      margin: 0 auto;
+      ">
+    <h1 class="title-main roboto-bold"
+        style="color: black; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.2; margin-bottom: 1rem;">
+      <strong>Web Developer &amp; Creative</strong>
+    </h1>
+
+    <h2 class="subtitle roboto-regular"
+        style="color: black; font-size: clamp(1rem, 2.5vw, 1.5rem); line-height: 1.4;">
+      Based in Tokyo, I’m an independent creative working across visual design, storytelling, and digital experiences.
+      I collaborate with artists, brands, and cultural spaces to develop thoughtful, expressive work that cuts through — from concept to execution.
+      Rooted in curiosity and shaped by a global perspective, my practice spans multiple mediums while always aiming to connect, resonate, and leave a lasting impression.
+    </h2>
   </div>
+</section>
 
-  <section style="padding: 3rem 0; max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; margin-bottom: 1rem; font-weight: 700; font-size: 2rem; color: #222;">Selected Projects</h2>
-    <p style="text-align: center; margin-bottom: 3rem; color: #555; font-size: 1.125rem;">
-      A collection of design and creative work across web, branding, and experimental formats.
-    </p>
+<!-- Projects Section Container -->
+<section class="projects-section" style="padding: 2rem 1rem; max-width: 1200px; margin: 0 auto;">
+  <h2 class="subtitle roboto-regular"
+      style="text-align: center; margin-bottom: 1rem; font-weight: 700; font-size: 2rem; color: #222;">
+    Projects
+  </h2>
 
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+  <h1 class="subtitle roboto-regular" style="text-align: center; margin-bottom: 3rem; color: #555; font-size: 1rem;">
+    A collection of design and creative work across web, branding, and experimental formats.
+  </h1>
 
-      <% projects = [
-        { path: "/planstonight/", image: 'projects/WebCoverPlan.png', alt: 'Plans Tonight' },
-        { path: "/wpu/", image: 'projects/WPUWebCover.png', alt: 'WPU' },
-        { path: "/kollab/", image: 'projects/kollabWebCover.png', alt: 'Kollab' },
-        { path: "/supldarkmatter/", image: 'projects/SuplLogo.png', alt: 'SUPL' },
-        { path: "/alterphorm/", image: 'projects/Alterphorm-Logo.png', alt: 'Alterphorm' },
-        { path: "/gallery/", image: 'projects/GALLERY.png', alt: 'Gallery' }
-      ] %>
+  <div class="subtitle roboto-regular"
+       style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+    <% projects = [
+      { path: "/planstonight/", image: 'projects/WebCoverPlan.png', alt: 'PLANS TONIGHT' },
+      { path: "/wpu/", image: 'projects/WPUWebCover.png', alt: 'WPU' },
+      { path: "/kollab/", image: 'projects/kollabWebCover.png', alt: 'KOLLAB' },
+      { path: "/supldarkmatter/", image: 'projects/SuplLogo.png', alt: 'SUPL' },
+      { path: "/alterphorm/", image: 'projects/Alterphorm-Logo.png', alt: 'ALTERPHORM' },
+      { path: "/gallery/", image: 'projects/GALLERY.png', alt: 'GALLERY' }
+    ] %>
 
-      <% projects.each do |project| %>
-        <div style="max-width: 300px; flex: 1 1 280px; text-align: center; transition: transform 0.2s ease; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); cursor: pointer;"
-             onmouseover="this.style.transform='scale(1.03)';" onmouseout="this.style.transform='scale(1)';">
-          <a href="<%= project[:path] %>" style="display: block; text-decoration: none; color: inherit;">
-            <%= image_tag project[:image], alt: project[:alt], style: "width: 100%; height: auto; border-radius: 12px;" %>
-            <p style="margin-top: 0.75rem; font-weight: 600; font-size: 1.1rem; color: #222;">
-              <%= project[:alt] %>
-            </p>
-          </a>
-        </div>
-      <% end %>
-
-    </div>
-  </section>
-
-  <div>
-    <%= partial 'partials/contactme' %>
+    <% projects.each do |project| %>
+      <div style="max-width: 300px; flex: 1 1 280px; text-align: center; transition: transform 0.2s ease; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); cursor: pointer;"
+           onmouseover="this.style.transform='scale(1.03)';" onmouseout="this.style.transform='scale(1)';">
+        <a href="<%= project[:path] %>" style="display: block; color: inherit; text-decoration: none;">
+          <%= image_tag project[:image], alt: project[:alt], style: "width: 100%; height: auto; border-radius: 12px;" %>
+          <h3 style="font-weight: 600; font-size: 1.1rem; color: #222; padding: 10px 0 0;">
+            <%= project[:alt] %>
+          </h3>
+        </a>
+      </div>
+    <% end %>
   </div>
+</section>
 
-  <div>
-    <%= partial 'partials/social' %>
-  </div>
+<div>
+  <%= partial 'partials/contactme' %>
 </div>

@@ -1,16 +1,29 @@
 <div>
   <%= partial 'partials/navbar' %>
 </div>
-<div id="wpuCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel" style="margin-top: 2rem;">
-  <div class="carousel-inner text-center">
-    <% [
-      'Wpu_Pitch1.png', 'Wpu_Pitch2.png', 'Wpu_Pitch3.png', 'Wpu_Pitch4.png',
-      'Wpu_pitch5.png', 'Wpu_Pitch6.png', 'Wpu_Pitch7.png', 'Wpu_Pitch8.png',
-      'Wpu_Pitch9.png', 'Wpu_pitch10.png', 'Wpu_Pitch11.png', 'Wpu_Pitch12.png',
-      'Wpu_Pitch13.png', 'Wpu_Pitch14.png'
-    ].each_with_index do |image, index| %>
-      <div class="carousel-item <%= 'active' if index == 0 %>" style="background-color: black;">
-        <%= image_tag "projects/#{image}", alt: "WPU Event Image #{index + 1}", class: "d-block w-100", style: "object-fit: contain; max-height: 90vh;" %>
+
+<div id="wpuCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-top: 2rem;">
+  <div class="carousel-inner text-center" style="max-height: 90vh; background-color: #000;">
+    <% images = [
+      'Wpu_Pitch1.png',
+      'Wpu_Pitch2.png',
+      'Wpu_Pitch3.png',
+      'Wpu_Pitch4.png',
+      'Wpu_pitch5.png',
+      'Wpu_Pitch6.png',
+      'Wpu_Pitch7.png',
+      'Wpu_Pitch8.png',
+      'Wpu_Pitch9.png',
+      'Wpu_pitch10.png',
+      'Wpu_Pitch11.png',
+      'Wpu_Pitch12.png',
+      'Wpu_Pitch13.png',
+      'Wpu_Pitch14.png'
+    ] %>
+
+    <% images.each_with_index do |image, index| %>
+      <div class="carousel-item <%= 'active' if index == 0 %>">
+        <%= image_tag "projects/#{image}", alt: "WPU Event Image", class: "d-block mx-auto", style: "max-height: 90vh; width: auto; object-fit: contain;" %>
       </div>
     <% end %>
   </div>
@@ -24,6 +37,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
 <div>
   <%= partial 'partials/contactme' %>
 </div>

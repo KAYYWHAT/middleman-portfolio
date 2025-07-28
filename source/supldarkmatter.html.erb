@@ -1,136 +1,216 @@
 <body style="background-color: black;">
-<div>
-  <%= partial 'partials/navbar' %>
-</div>
-<!-- Image with text and logo overlay -->
-<div class="image-container" style="background-color: black; position: relative; max-height: 550px; overflow: hidden; align-items: center; background-size: cover; background-position: center; object-fit: cover;">
-  <!-- Main Image with reduced height -->
-  <%= image_tag 'projects/Stawell.jpeg', alt: 'SUPL', class: 'image', style: 'width: 100%; height: 650px; object-fit: cover;' %>
-  <!-- Text overlay on the top-left with padding -->
-  <div class="overlay-content" style="position: absolute; top: 2.5%; left: 5%; color: black; text-align: left;">
-    <h2 class="subtitle roboto-regular" style="color: white; font-size: 5rem; margin-bottom: 1rem;"><strong>SUPL</strong></h2>
-    <h2 class="subtitle roboto-regular" style="color: white; margin-bottom: 0rem;">Seeks to <strong>unravel the mystery</strong> of <strong>Dark Matter</strong> using a <strong>state-of-the-art underground lab</strong> 1km below Stawell, Victoria.</h2>
-    <h2 class="subtitle roboto-regular" style="color: white; margin-bottom: 0rem;">Designed to <strong>minimize cosmic interference</strong> and <strong>join the global search</strong> for this elusive particle,</h2>
-    <h2 class="subtitle roboto-regular" style="color: white; margin-bottom: 0rem;">making it one of the <strong>most advanced labs in the southern hemisphere.</strong></h2>
-    <div class="button-container" style="margin-top: 2rem;">
-    </div>
-      <a class="btn1 btn-ghost11 subtitle roboto-regular" style="color: white;" href="https://www.supl.org.au/" target="_blank">More Info</a>
-    </div>
-  <!-- Brand Logo in the bottom-right corner -->
-  <div class="logo-container" style="position: absolute; bottom: 5%; right: 5%; width: 150px;">
-    <%= image_tag 'projects/SuplLogo2.png', alt: 'SUPL Logo', class: 'image' %>
-  </div>
-</div>
-
-<div class="main-container1" style="background-color: black;">
-  <div class="container my-5">
-<!-- Bootstrap Carousel -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
-  </ol>
-
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%= image_tag 'projects/ProblemDef.png', class: 'd-block w-100', alt: 'Problem' %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'projects/InitialResearch.png', class: 'd-block w-100', alt: 'Initial Research' %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'projects/UserResearch.png', class: 'd-block w-100', alt: 'User Research' %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag 'projects/Persona.png', class: 'd-block w-100', alt: 'Persona' %>
-    </div>
-  </div>
-
-  <!-- Arrow controls -->
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<div class="d-flex justify-content-between align-items-center image-group" style="margin-top: 2rem; margin-bottom: 2rem;">
-<a href="#" class="project-image">
-  <%= image_tag 'projects/HMW.png', alt: 'Kollab', class: 'image' %>
-</a>
-<a href="#" class="project-image">
-  <%= image_tag 'projects/Solution.png', alt: 'Kollab', class: 'image' %>
-</a>
-</div>
-
-
-
-<!-- Container for other content -->
-<div class="main-container2" style="margin-top: 2rem;">
-     <div>
-      <a href="#" class="project-image">
-        <%= image_tag 'projects/Prototyping.png', alt: 'Solution', class: 'image' %>
-      </a>
-    </div>
-      <div>
-      <a href="#" class="project-image">
-        <%= image_tag 'projects/Helmet.png', alt: 'Solution', class: 'image' %>
-      </a>
-    </div>
-    <div style="margin-top: 2rem;">
-      <a href="#" class="project-image">
-        <%= image_tag 'projects/Framework.png', alt: 'Solution', class: 'image' %>
-      </a>
-    </div>
-    <div>
-      <a href="#" class="project-image">
-        <%= image_tag 'projects/ApplicationProto.png', alt: 'Solution', class: 'image' %>
-      </a>
-    </div>
-    <div>
-      <a href="#" class="project-image">
-        <%= image_tag 'projects/Explore.png', alt: 'Solution', class: 'image' %>
-      </a>
-    </div>
-        <div class="project-image-group1" style="margin-top: 2rem;">
-      <a href="#" class="project-image2">
-        <%= image_tag 'projects/ScreenShotSUPL.png', alt: 'Solution', class: 'image' %>
-      </a>
-      <a href="#" class="project-image2">
-        <%= image_tag 'projects/ScreenShotMap.png', alt: 'Solution', class: 'image' %>
-      </a>
-      <a href="#" class="project-image2">
-        <%= image_tag 'projects/ScreenShotHelmet.png', alt: 'Solution', class: 'image' %>
-      </a>
-            <a href="#" class="project-image2">
-        <%= image_tag 'projects/ScreenShotNFT.png', alt: 'Solution', class: 'image' %>
-      </a>
-    </div>
-    </div>
-    </div>
-
-  <!-- Tech icons -->
-  <div class="tech-icons mt-5">
-    <%= image_tag 'projects/HTML5.svg', alt: 'HTML5', class: 'tech-icon' %>
-    <%= image_tag 'projects/CSS3.svg', alt: 'CSS3', class: 'tech-icon' %>
-    <%= image_tag 'projects/JavaScript.svg', alt: 'JavaScript', class: 'tech-icon' %>
-    <%= image_tag 'projects/RubyonRails.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
-    <%= image_tag 'projects/Ruby.svg', alt: 'Ruby', class: 'tech-icon' %>
-  </div>
-
-  <div class="tech-icons mt-3">
-    <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
-    <%= image_tag 'projects/Figma.svg', alt: 'Figma', class: 'tech-icon' %>
-    <%= image_tag 'projects/Bootstrap.svg', alt: 'Bootstrap', class: 'tech-icon' %>
-  </div>
-</div>
-<!-- Social partial -->
   <div>
-    <%= partial 'partials/contactme' %>
+    <%= partial 'partials/navbar' %>
   </div>
+
+  <!-- Image with text and logo overlay -->
+  <div class="image-container" style="background-color: black; position: relative; max-height: 550px; overflow: hidden; align-items: center; background-size: cover; background-position: center; object-fit: cover;">
+    <!-- Main Image with reduced height -->
+    <%= image_tag 'projects/Stawell.jpeg', alt: 'SUPL', class: 'image', style: 'width: 100%; height: 650px; object-fit: cover;' %>
+
+    <!-- Text overlay on the top-left with padding -->
+    <div class="overlay-content" style="position: absolute; top: 2.5%; left: 5%; color: black; text-align: left;">
+      <h2 class="subtitle roboto-regular" style="color: white; font-size: 5rem; margin-bottom: 1rem;"><strong>SUPL</strong></h2>
+      <h2 class="subtitle roboto-regular" style="color: white; margin-bottom: 0rem;">Seeks to <strong>unravel the mystery</strong> of <strong>Dark Matter</strong> using a <strong>state-of-the-art underground lab</strong> 1km below Stawell, Victoria.</h2>
+      <h2 class="subtitle roboto-regular" style="color: white; margin-bottom: 0rem;">Designed to <strong>minimize cosmic interference</strong> and <strong>join the global search</strong> for this elusive particle,</h2>
+      <h2 class="subtitle roboto-regular" style="color: white; margin-bottom: 0rem;">making it one of the <strong>most advanced labs in the southern hemisphere.</strong></h2>
+      <div class="button-container" style="margin-top: 2rem;">
+        <a class="btn1 btn-ghost11 subtitle roboto-regular" style="color: white;" href="https://www.supl.org.au/" target="_blank">More Info</a>
+      </div>
+    </div>
+
+    <!-- Brand Logo in the bottom-right corner -->
+    <div class="logo-container" style="position: absolute; bottom: 5%; right: 5%; width: 150px;">
+      <%= image_tag 'projects/SuplLogo2.png', alt: 'SUPL Logo', class: 'image' %>
+    </div>
+  </div>
+
+  <div class="main-container1" style="background-color: black;">
+    <div class="container my-5">
+
+      <!-- Bootstrap Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+        </ol>
+
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag 'projects/ProblemDef.png', class: 'd-block w-100', alt: 'Problem' %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag 'projects/InitialResearch.png', class: 'd-block w-100', alt: 'Initial Research' %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag 'projects/UserResearch.png', class: 'd-block w-100', alt: 'User Research' %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag 'projects/Persona.png', class: 'd-block w-100', alt: 'Persona' %>
+          </div>
+        </div>
+
+        <!-- Arrow controls -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center image-group" style="margin-top: 2rem; margin-bottom: 2rem;">
+        <a href="#" class="project-image">
+          <%= image_tag 'projects/HMW.png', alt: 'Kollab', class: 'image' %>
+        </a>
+        <a href="#" class="project-image">
+          <%= image_tag 'projects/Solution.png', alt: 'Kollab', class: 'image' %>
+        </a>
+      </div>
+
+      <!-- Container for other content -->
+      <div class="main-container2" style="margin-top: 2rem;">
+        <div>
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Prototyping.png', alt: 'Solution', class: 'image' %>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Helmet.png', alt: 'Solution', class: 'image' %>
+          </a>
+        </div>
+        <div style="margin-top: 2rem;">
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Framework.png', alt: 'Solution', class: 'image' %>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/ApplicationProto.png', alt: 'Solution', class: 'image' %>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="project-image">
+            <%= image_tag 'projects/Explore.png', alt: 'Solution', class: 'image' %>
+          </a>
+        </div>
+        <div class="project-image-group1" style="margin-top: 2rem;">
+          <a href="#" class="project-image2">
+            <%= image_tag 'projects/ScreenShotSUPL.png', alt: 'Solution', class: 'image' %>
+          </a>
+          <a href="#" class="project-image2">
+            <%= image_tag 'projects/ScreenShotMap.png', alt: 'Solution', class: 'image' %>
+          </a>
+          <a href="#" class="project-image2">
+            <%= image_tag 'projects/ScreenShotHelmet.png', alt: 'Solution', class: 'image' %>
+          </a>
+          <a href="#" class="project-image2">
+            <%= image_tag 'projects/ScreenShotNFT.png', alt: 'Solution', class: 'image' %>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech icons -->
+    <div class="tech-icons mt-5">
+      <%= image_tag 'projects/HTML5.svg', alt: 'HTML5', class: 'tech-icon' %>
+      <%= image_tag 'projects/CSS3.svg', alt: 'CSS3', class: 'tech-icon' %>
+      <%= image_tag 'projects/JavaScript.svg', alt: 'JavaScript', class: 'tech-icon' %>
+      <%= image_tag 'projects/RubyonRails.svg', alt: 'Ruby on Rails', class: 'tech-icon' %>
+      <%= image_tag 'projects/Ruby.svg', alt: 'Ruby', class: 'tech-icon' %>
+    </div>
+
+    <div class="tech-icons mt-3">
+      <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
+      <%= image_tag 'projects/Figma.svg', alt: 'Figma', class: 'tech-icon' %>
+      <%= image_tag 'projects/Bootstrap.svg', alt: 'Bootstrap', class: 'tech-icon' %>
+    </div>
+  </div>
+
+  <!-- Social partial -->
+  <footer class="py-0.5" style="background-color: black; margin-top: 2rem; margin-bottom: 2rem;">
+    <div class="container text-center">
+      <div class="d-flex flex-column align-items-center">
+
+        <!-- Email (copy button) -->
+        <button id="copy-email-btn" class="footer-link" style="text-transform: uppercase;">
+          ALLFORDCADEYRN@GMAIL.COM →
+        </button>
+
+        <!-- GitHub -->
+        <a href="https://github.com/KAYYWHAT" target="_blank" class="footer-link">
+          GITHUB →
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/kayywhat/" target="_blank" class="footer-link">
+          INSTAGRAM →
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/cadeyrnrattur" target="_blank" class="footer-link">
+          LINKEDIN →
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .footer-link {
+      text-decoration: none;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 700;
+      font-family: 'Roboto', sans-serif;
+      margin: 0.25rem 0;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* Keep white color and add underline on hover/focus */
+    .footer-link:hover,
+    .footer-link:focus,
+    .footer-link:active {
+      color: white !important;
+      text-decoration: underline;
+      text-decoration-color: white;
+      outline: none;
+    }
+
+    /* Remove default focus outlines */
+    .footer-link:focus-visible {
+      outline: none;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("turbo:load", function () {
+      const button = document.getElementById("copy-email-btn");
+      if (button) {
+        button.addEventListener("click", () => {
+          const email = "allfordcadeyrn@gmail.com";
+          navigator.clipboard.writeText(email).then(() => {
+            button.innerText = "COPIED!";
+            button.style.color = "#155724";
+
+            setTimeout(() => {
+              button.innerText = "ALLFORDCADEYRN@GMAIL.COM →";
+              button.style.color = "white";
+            }, 2000);
+          }).catch(() => {
+            alert("Sorry, failed to copy.");
+          });
+        });
+      }
+    });
+  </script>
+</body>

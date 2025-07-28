@@ -6,7 +6,8 @@
       </a>
     </div>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <%# <span class="navbar-toggler-icon"></span> %>
     </button>
 
@@ -19,9 +20,39 @@
           <a class="nav-link" href="https://docs.google.com/document/d/1d0SwgwT8lKb9kPgaf7JVo8geTBm0Xx7MpPJgKOh7c8o/edit?usp=sharing" target="_blank">RESUME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/index.html#contact-me">CONTACT ME</a>
+          <a class="nav-link" href="/contact">CONTACT ME</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<style>
+  .navbar .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  }
+
+  /* Normal hover */
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+    color: greenyellow;
+    border-bottom-color: greenyellow;
+  }
+
+  /* Override for active nav-item so hover still works */
+  .navbar .nav-item.active .nav-link:hover,
+  .navbar .nav-item.active .nav-link:focus {
+    color: greenyellow !important;
+    border-bottom-color: greenyellow !important;
+    cursor: pointer;
+  }
+</style>

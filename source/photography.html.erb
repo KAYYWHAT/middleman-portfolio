@@ -1,0 +1,72 @@
+<div>
+  <%= partial 'partials/navbar' %>
+</div>
+
+<div class="container my-5" style="padding: 0; background: none; border: none; box-shadow: none;">
+  <h1 class="title-main roboto-bold text-center mb-4" style="color: black;">
+    Photography
+  </h1>
+
+  <div class="row g-3 justify-content-center">
+    <% [
+      "@_@-68.jpeg",
+      "@_@-69.jpeg",
+      "@_@-64.jpeg",
+      "@_@-66.jpeg",
+      "C0U6080-R1-11-14.JPG",
+      "C0U6081-R1-14-23.JPG",
+      "C0U6081-R1-11-26.JPG",
+      "C0U6081-R1-03-34.JPG",
+      "@_@-34.jpeg",
+      "@_@-28.jpeg",
+      "@_@-43.jpeg",
+      "@_@-29.jpeg",
+      "C0U6080-R1-15-10.jpg",
+      "C0U6080-R1-17-8.jpg",
+      "C0U6080-R1-18-7.jpg",
+      "C0U6079-R1-02-3.JPG",
+      "IMG_1837.JPG",
+      "IMG_1839.JPG",
+      "IMG_1841.JPG",
+      "IMG_1870.JPG",
+      "IMG_2547.jpeg",
+      "IMG_2487.JPG",
+      "IMG_2497.JPG",
+      "IMG_2530.JPG",
+      "IMG_4704.jpg",
+      "IMG_4705.jpg",
+      "C0U6078-R1-03-22.jpg",
+      "C0U6078-R1-00-25.jpg",
+      "000018.jpg",
+      "IMG_0495.jpg",
+      "IMG_0471.jpg",
+      "IMG_0487.jpg",
+      "IMG_4098.jpg",
+      "IMG_4093.jpg",
+      "IMG_4092.jpg",
+      "IMG_4088.jpg",
+      "IMG_9020.jpg",
+      "IMG_9021.jpg",
+      "IMG_9023.jpg",
+      "IMG_9026.jpg",
+      "IMG_0705.jpeg",
+      "IMG_0745.jpg",
+      "IMG_0867.jpg",
+      "IMG_0879.jpeg",
+      "IMG_3064.jpg",
+      "@_@-10.jpeg",
+      "IMG_3084.jpg",
+      "IMG_3777.jpeg"
+    ].each do |filename| %>
+      <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center">
+        <div style="width: 100%; max-width: 300px; border-radius: 8px; overflow: hidden;">
+          <%= image_tag "projects/#{filename}", alt: "Photo", class: "img-fluid", style: "width: 100%; height: auto; display: block;" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div>
+  <%= partial 'partials/contactme' %>
+</div>

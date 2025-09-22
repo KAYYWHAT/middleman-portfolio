@@ -68,44 +68,61 @@
       </a>
     </div>
 
-    <!-- COMBINED POSTERS & FLYERS SECTION -->
-    <div class="text-container" style="margin-top: 2rem; margin-bottom: 2rem;">
-      <h1 class="title-main roboto" style="color: black;">Posters & Flyers</h1>
-    </div>
-
-    <div class="d-flex justify-content-between align-start image-group" style="padding-top: 1rem; gap: 1rem; width: 100%;">
-      <!-- Zine Poster -->
-      <div class="text-center" style="flex: 1;">
-        <h2 class="title-sub roboto" style="color: black;">Zine Party</h2>
-        <a href="#" class="project-image">
-          <%= image_tag 'projects/Zineposter2.png', alt: 'Zine Party', class: 'image' %>
-        </a>
-      </div>
-
-      <!-- Invitation Card -->
-      <div class="text-center" style="flex: 1;">
-        <h2 class="title-sub roboto" style="color: black;">Goontex Inv Card</h2>
-        <a href="#" class="project-image">
-          <%= image_tag 'projects/Goon_product.png', alt: 'GOON Invitation', class: 'image' %>
-        </a>
-      </div>
-
-      <!-- HVEN Flyer -->
-      <div class="text-center" style="flex: 1;">
-        <h2 class="title-sub roboto" style="color: black;">Halloween at HVEN</h2>
-        <a href="#" class="project-image">
-          <%= image_tag 'projects/Mockup1234.png', alt: 'HVEN Flyer', class: 'image' %>
-        </a>
-      </div>
-    </div>
-    <!-- END COMBINED SECTION -->
-
-    <div class="tech-icons">
-      <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
-      <%= image_tag 'projects/Adobe Photoshop.svg', alt: 'Photoshop', class: 'tech-icon' %>
-      <%= image_tag 'projects/Adobe Premiere Pro.svg', alt: 'PremierePro', class: 'tech-icon' %>
-    </div>
+<!-- COMBINED POSTERS & FLYERS SECTION -->
+<div class="text-container" style="margin-top: 2rem; margin-bottom: 2rem;">
+  <h1 class="title-main roboto" style="color: black;">Posters & Flyers</h1>
 </div>
-<div>
+
+<div class="row g-4" style="padding-top: 1rem;">
+  <!-- Zine Poster -->
+  <div class="col-12 col-md-6 text-center">
+    <h2 class="title-main roboto" style="color: black;">Zine Party</h2>
+    <a href="#" class="project-image">
+      <%= image_tag 'projects/Zineposter2.png', alt: 'Zine Party', class: 'image img-fluid' %>
+    </a>
+  </div>
+
+  <!-- DAARONS X RILES -->
+  <div class="col-12 col-md-6 text-center">
+    <h2 class="title-main roboto" style="color: black;">DAARONS X RILES</h2>
+    <a href="#" class="project-image">
+      <%= image_tag 'projects/Daaronsmock.png', alt: 'Daarons x Riles', class: 'image img-fluid' %>
+    </a>
+  </div>
+
+  <!-- FOLIA X LOVED -->
+  <div class="col-12 col-md-6 text-center">
+    <h2 class="title-main roboto" style="color: black;">FOLIA X LOVED</h2>
+    <a href="#" class="project-image">
+      <%= image_tag 'projects/Foliamockup.png', alt: 'Folia Flyer', class: 'image img-fluid' %>
+    </a>
+  </div>
+
+  <!-- HVEN Flyer -->
+  <div class="col-12 col-md-6 text-center">
+    <h2 class="title-main roboto" style="color: black;">Halloween at HVEN</h2>
+    <a href="#" class="project-image">
+      <%= image_tag 'projects/Mockup1234.png', alt: 'HVEN Flyer', class: 'image img-fluid' %>
+    </a>
+  </div>
+
+  <!-- Goontex Inv Card -->
+  <div class="col-12 col-md-6 text-center">
+    <h2 class="title-main roboto" style="color: black;">Goontex Inv Card</h2>
+    <a href="#" class="project-image">
+      <%= image_tag 'projects/Goon_product.png', alt: 'GOON Invitation', class: 'image img-fluid' %>
+    </a>
+  </div>
+</div>
+<!-- END COMBINED SECTION -->
+
+
+<div class="tech-icons">
+  <%= image_tag 'projects/Adobe Illustrator.svg', alt: 'Illustrator', class: 'tech-icon' %>
+   <%= image_tag 'projects/Adobe Photoshop.svg', alt: 'Photoshop', class: 'tech-icon' %>
+   <%= image_tag 'projects/Adobe Premiere Pro.svg', alt: 'PremierePro', class: 'tech-icon' %>
+ </div>
+ </div>
+ <div>
   <%= partial 'partials/contactme' %>
-</div>
+ </div>

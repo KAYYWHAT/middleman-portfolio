@@ -1,13 +1,16 @@
 <div>
   <%= partial 'partials/navbar' %>
 </div>
+
+<!-- Banner Section -->
+<section class="photo-banner">
+  <%= image_tag 'projects/DesignLogo1-min.png', alt: 'Photo Logo', class: 'banner-image' %>
+</section>
+
 <div class="main-container">
-    <div class="text-container" style="margin-top: 2rem; margin-bottom: 2rem;">
-      <h1 class="roboto-bold" style="color: black;"><strong>Design Gallery</strong></h1>
-    </div>
 
     <div class="text-container" style="margin-top: 2rem; margin-bottom: 2rem;">
-      <h1 class="title-main roboto text-container" style="color: black;">Tokyo Circus 2022 - Mock Zine Covers</h1>
+      <h1 class="title-main roboto text-container" style="color: black;">Tokyo Circus 2022 - Mock Zine</h1>
     </div>
     <div class="d-flex justify-content-between align-items-center image-group">
       <a href="#" class="project-image">
@@ -34,7 +37,7 @@
 
     <!-- NEW POSTERS SECTION -->
     <div class="text-container" style="margin-top: 2rem; margin-bottom: 2rem;">
-      <h1 class="title-main roboto" style="color: black;">WPÜ Shinjuku - Room Next Door Posters</h1>
+      <h1 class="title-main roboto" style="color: black;">WPÜ Shinjuku - Room Next Door</h1>
     </div>
 
     <div class="d-flex justify-content-between align-items-center image-group" style="padding-top: 1rem;">
@@ -74,47 +77,42 @@
 </div>
 
 <div class="row g-4" style="padding-top: 1rem;">
-  <!-- Zine Poster -->
-  <div class="col-12 col-md-6 text-center">
-    <h2 class="title-main roboto" style="color: black;">Zine Party</h2>
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/Zineposter2-min.png', alt: 'Zine Party', class: 'image img-fluid' %>
-    </a>
-  </div>
+  <% posters = [
+    { title: "Zine Party", image: "Zineposter2-min.png", alt: "Zine Party" },
+    { title: "DAARONS X RILES", image: "Daaronsmock-min.png", alt: "Daarons x Riles" },
+    { title: "FOLIA X LOVED", image: "Foliamockup-min.png", alt: "Folia Flyer" },
+    { title: "Halloween at HVEN", image: "Mockup1234-min.png", alt: "HVEN Flyer" },
+    { title: "Goontex Inv Card", image: "Goon_product-min.png", alt: "GOON Invitation" }
+  ] %>
 
-  <!-- DAARONS X RILES -->
-  <div class="col-12 col-md-6 text-center">
-    <h2 class="title-main roboto" style="color: black;">DAARONS X RILES</h2>
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/Daaronsmock-min.png', alt: 'Daarons x Riles', class: 'image img-fluid' %>
-    </a>
-  </div>
-
-  <!-- FOLIA X LOVED -->
-  <div class="col-12 col-md-6 text-center">
-    <h2 class="title-main roboto" style="color: black;">FOLIA X LOVED</h2>
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/Foliamockup-min.png', alt: 'Folia Flyer', class: 'image img-fluid' %>
-    </a>
-  </div>
-
-  <!-- HVEN Flyer -->
-  <div class="col-12 col-md-6 text-center">
-    <h2 class="title-main roboto" style="color: black;">Halloween at HVEN</h2>
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/Mockup1234-min.png', alt: 'HVEN Flyer', class: 'image img-fluid' %>
-    </a>
-  </div>
-
-  <!-- Goontex Inv Card -->
-  <div class="col-12 col-md-6 text-center">
-    <h2 class="title-main roboto" style="color: black;">Goontex Inv Card</h2>
-    <a href="#" class="project-image">
-      <%= image_tag 'projects/Goon_product-min.png', alt: 'GOON Invitation', class: 'image img-fluid' %>
-    </a>
-  </div>
+  <% posters.each do |poster| %>
+    <div class="col-12 col-md-6 text-center poster-container">
+      <h2 class="title-main roboto" style="color: black; margin-bottom: 0.75rem;"><%= poster[:title] %></h2>
+      <a href="#" class="project-image">
+        <%= image_tag "projects/#{poster[:image]}", alt: poster[:alt], class: 'image img-fluid poster-image' %>
+      </a>
+    </div>
+  <% end %>
 </div>
-<!-- END COMBINED SECTION -->
+
+<style>
+  /* Add spacing around each poster image */
+  .poster-container {
+    padding: 1rem; /* space around each poster block */
+  }
+
+  .poster-image {
+    padding: 0.5rem; /* small padding around image inside block */
+    border-radius: 8px; /* optional, soft corners */
+    display: inline-block;
+  }
+
+  /* Optional: spacing between title and image */
+  .poster-container h2 {
+    margin-bottom: 1rem;
+  }
+</style>
+
 
 
 <div class="tech-icons">
@@ -126,3 +124,33 @@
  <div>
   <%= partial 'partials/contactme' %>
  </div>
+
+ <style>
+  .photo-banner {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .photo-banner .banner-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  /* Mobile: reduce banner height */
+  @media (max-width: 768px) {
+    .photo-banner .banner-image {
+      max-height: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .photo-banner .banner-image {
+      max-height: 200px;
+    }
+  }
+</style>

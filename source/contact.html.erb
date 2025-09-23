@@ -8,29 +8,37 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-color: white;
+      background-color: #fff;
       color: #000;
     }
 
     .contact-container {
       display: flex;
-      min-height: calc(100vh - 60px);
-      background-color: white;
+      min-height: calc(100vh - 60px); /* Adjust for navbar height */
+      background-color: #fff;
+      overflow: hidden;
     }
 
     .contact-left {
       flex: 1;
-      background: url('/images/projects/KayLogo112.png') no-repeat center center;
+      background: url('/images/projects/kayywhat1221.jpg') no-repeat center center;
       background-size: cover;
       min-height: calc(100vh - 60px);
+      transition: transform 0.5s ease;
+    }
+
+    .contact-left:hover {
+      transform: scale(1.02); /* subtle zoom effect */
     }
 
     .contact-right {
       flex: 1;
-      padding: 4rem 3rem;
+      padding: 6rem 4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      max-width: 600px;
+      margin: auto 0;
     }
 
     .contact-right h1 {
@@ -38,27 +46,39 @@
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .contact-right p {
       font-size: 1.25rem;
-      line-height: 1.5;
+      line-height: 1.6;
       font-weight: 400;
+      margin-bottom: 2rem;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       .contact-container {
         flex-direction: column;
       }
 
       .contact-left {
-        min-height: 250px;
+        min-height: 300px;
         background-size: contain;
       }
 
       .contact-right {
-        padding: 2rem;
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-right h1 {
+        font-size: 2.25rem;
+      }
+
+      .contact-right p {
+        font-size: 1rem;
       }
     }
   </style>
@@ -71,7 +91,7 @@
     <div class="contact-right">
       <h1>Contact Me</h1>
       <p>
-        I’m always open to professional opportunities and collaborations. Please feel free to reach out using the contact details below.
+        I’m always open to professional opportunities and collaborations. Feel free to reach out using the contact details below.
       </p>
     </div>
   </div>

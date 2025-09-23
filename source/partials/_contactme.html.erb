@@ -2,80 +2,71 @@
   <div class="container text-center">
     <div class="d-flex flex-column align-items-center">
 
-      <!-- Email (copy button) -->
-      <button id="copy-email-btn"
-        style="background: transparent; border: none; color: #000; font-size: 0.9rem; font-weight: 700; cursor: pointer; text-transform: uppercase; text-decoration: none; font-family: 'Roboto', sans-serif;">
+      <!-- Email -->
+      <button id="copy-email-btn" type="button"
+        style="background: transparent; border: none; color: #000; font-size: 0.9rem; font-weight: 700; cursor: pointer; text-transform: uppercase; font-family: 'Roboto', sans-serif;">
         ALLFORDCADEYRN@GMAIL.COM →
       </button>
 
-      <!-- GitHub -->
-      <a href="https://github.com/KAYYWHAT" target="_blank"
-         style="color: #000; text-decoration: none; font-size: 0.9rem; font-weight: 700; font-family: 'Roboto', sans-serif;"
-         class="footer-link">
-        GITHUB →
-      </a>
+      <!-- Socials -->
+      <a href="https://github.com/KAYYWHAT" target="_blank" class="footer-link">GITHUB →</a>
+      <a href="https://www.instagram.com/kayywhat/" target="_blank" class="footer-link">INSTAGRAM →</a>
+      <a href="https://www.linkedin.com/in/cadeyrnrattur" target="_blank" class="footer-link">LINKEDIN →</a>
 
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/kayywhat/" target="_blank"
-         style="color: #000; text-decoration: none; font-size: 0.9rem; font-weight: 700; font-family: 'Roboto', sans-serif;"
-         class="footer-link">
-        INSTAGRAM →
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/cadeyrnrattur" target="_blank"
-         style="color: #000; text-decoration: none; font-size: 0.9rem; font-weight: 700; font-family: 'Roboto', sans-serif;"
-         class="footer-link">
-        LINKEDIN →
-      </a>
+      <!-- Back to Top -->
+      <button id="back-to-top" type="button"
+        style="margin-top: 1rem; background: transparent; border: none; color: #000; font-size: 0.9rem; font-weight: 700; cursor: pointer; text-transform: uppercase; font-family: 'Roboto', sans-serif;">
+        BACK TO TOP ↑
+      </button>
 
     </div>
   </div>
 </footer>
 
 <style>
-  /* Default no underline */
-  .footer-link,
-  #copy-email-btn {
+  .footer-link, #copy-email-btn, #back-to-top {
     text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin: 0.2rem 0;
   }
 
-  /* Underline on hover/focus */
-  .footer-link:hover,
-  .footer-link:focus,
-  #copy-email-btn:hover,
-  #copy-email-btn:focus {
+  .footer-link:hover, .footer-link:focus,
+  #copy-email-btn:hover, #copy-email-btn:focus,
+  #back-to-top:hover, #back-to-top:focus {
     text-decoration: underline;
-    text-decoration-color: black;
     text-underline-offset: 3px;
     color: #000 !important;
-    outline: none;
-  }
-
-  /* Remove default focus outline for keyboard users, optional */
-  #copy-email-btn:focus-visible,
-  .footer-link:focus-visible {
-    outline: none;
   }
 </style>
 
-<script>
-  document.addEventListener("turbo:load", function () {
-    const button = document.getElementById("copy-email-btn");
-    if (button) {
-      button.addEventListener("click", () => {
-        const email = "allfordcadeyrn@gmail.com";
-        navigator.clipboard.writeText(email).then(() => {
-          button.innerText = "COPIED!";
-          button.style.color = "#155724";
+<script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Copy email
+    const emailBtn = document.getElementById("copy-email-btn");
+    if (emailBtn) {
+      emailBtn.addEventListener("click", () => {
+        navigator.clipboard.writeText("allfordcadeyrn@gmail.com")
+          .then(() => {
+            emailBtn.innerText = "COPIED!";
+            emailBtn.style.color = "#155724";
+            setTimeout(() => {
+              emailBtn.innerText = "ALLFORDCADEYRN@GMAIL.COM →";
+              emailBtn.style.color = "#000";
+            }, 2000);
+          })
+          .catch(() => alert("Failed to copy"));
+      });
+    }
 
-          setTimeout(() => {
-            button.innerText = "ALLFORDCADEYRN@GMAIL.COM →";
-            button.style.color = "#000";
-          }, 2000);
-        }).catch(() => {
-          alert("Sorry, failed to copy.");
-        });
+    // Back to top
+    const backBtn = document.getElementById("back-to-top");
+    if (backBtn) {
+      backBtn.addEventListener("click", () => {
+        // This always works even if Turbo or scroll container exists
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       });
     }
   });

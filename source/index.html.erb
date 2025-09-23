@@ -3,35 +3,27 @@
 </div>
 
 <!-- Banner Section Container -->
-<section class="banner-section"
-         style="
-           width: 100%;
-           padding: 4rem 5vw; /* vertical and horizontal padding */
-           background-color: #fff; /* optional, you can remove if transparent */
-           box-sizing: border-box;
-           ">
-  <div style="
-      max-width: 900px; /* limits line length */
-      margin: 0 auto;
-      ">
-    <h1 class="title-main roboto-bold"
-        style="color: black; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.2; margin-bottom: 1rem;">
+<section class="banner-section">
+  <!-- Left Image -->
+  <div class="banner-left"></div>
+
+  <!-- Right Text Content -->
+  <div class="banner-right">
+    <h1 class="title-main roboto-bold">
       <strong>Web Developer &amp; Creative</strong>
     </h1>
 
-    <h2 class="subtitle roboto-regular"
-        style="color: black; font-size: clamp(1rem, 2.5vw, 1.5rem); line-height: 1.4;">
-      Based in Tokyo, I’m an independent creative working across visual design, storytelling, and digital experiences.
+    <h2 class="subtitle roboto-regular">
+      Based in Tokyo and Melbourne, I’m an independent creative working across visual design, storytelling, and digital experiences.
       I collaborate with artists, brands, and cultural spaces to develop thoughtful, expressive work that cuts through — from concept to execution.
       Rooted in curiosity and shaped by a global perspective, my practice spans multiple mediums while always aiming to connect, resonate, and leave a lasting impression.
     </h2>
   </div>
 </section>
 
-<!-- Projects Section Container -->
+<!-- Projects Section -->
 <section class="projects-section" style="padding: 2rem 1rem; max-width: 1200px; margin: 0 auto;">
-  <h2 class="subtitle roboto-regular"
-      style="text-align: center; margin-bottom: 1rem; font-weight: 700; font-size: 2rem; color: #222;">
+  <h2 class="subtitle roboto-regular" style="text-align: center; margin-bottom: 1rem; font-weight: 700; font-size: 2rem; color: #222;">
     Projects
   </h2>
 
@@ -39,8 +31,7 @@
     A collection of design and creative work across web, branding, and experimental formats.
   </h1>
 
-  <div class="subtitle roboto-regular"
-       style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+  <div class="subtitle roboto-regular" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
     <% projects = [
       { path: "/planstonight/", image: 'projects/WebCoverPlan.png', alt: 'PLANS TONIGHT' },
       { path: "/wpu/", image: 'projects/WPUWebCover.png', alt: 'WPU' },
@@ -68,3 +59,74 @@
 <div>
   <%= partial 'partials/contactme' %>
 </div>
+
+<style>
+  .banner-section {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+  }
+
+  .banner-left {
+    flex: 1;
+    min-height: 70vh;
+    background: url('/images/projects/kayywhat1221.jpg') no-repeat center center;
+    background-size: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .banner-right {
+    flex: 1;
+    padding: 6rem 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto 0;
+    color: #000;
+    text-align: left;
+  }
+
+  .banner-right h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-right h2 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  /* Mobile: stacked layout with black text */
+  @media (max-width: 1024px) {
+    .banner-section {
+      flex-direction: column;
+      min-height: auto;
+    }
+
+    .banner-left {
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+    }
+
+    .banner-right {
+      width: 100%;
+      padding: 4rem 3vw;
+      color: #000;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-right h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .banner-right h2 {
+      font-size: clamp(0.9rem, 3vw, 1.2rem);
+    }
+  }
+</style>
